@@ -1,64 +1,107 @@
- /*
- * MAIN Generated Driver File
- * 
- * @file main.c
- * 
- * @defgroup main MAIN
- * 
- * @brief This is the generated driver implementation file for the MAIN driver.
- *
- * @version MAIN Driver Version 1.0.2
- *
- * @version Package Version: 3.1.2
-*/
+#include <stdint.h>
 
-/*
-© [2025] Microchip Technology Inc. and its subsidiaries.
-
-    Subject to your compliance with these terms, you may use Microchip 
-    software and any derivatives exclusively with Microchip products. 
-    You are responsible for complying with 3rd party license terms  
-    applicable to your use of 3rd party software (including open source  
-    software) that may accompany Microchip software. SOFTWARE IS ?AS IS.? 
-    NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS 
-    SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT,  
-    MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT 
-    WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, 
-    INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY 
-    KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF 
-    MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE 
-    FORESEEABLE. TO THE FULLEST EXTENT ALLOWED BY LAW, MICROCHIP?S 
-    TOTAL LIABILITY ON ALL CLAIMS RELATED TO THE SOFTWARE WILL NOT 
-    EXCEED AMOUNT OF FEES, IF ANY, YOU PAID DIRECTLY TO MICROCHIP FOR 
-    THIS SOFTWARE.
-*/
 #include "mcc_generated_files/system/system.h"
+#include "mcc_generated_files/system/interrupt.h"
 
-/*
-    Main application
-*/
+#include "mcp2515.h"
 
-int main(void)
-{
+static const MCP2515_Config mcp2515_config = {
+    .rxb0ctrl = RXM_FILTER,
+    .rxb1ctrl = RXM_FILTER,
+    .bfpctrl = MERRE | ERRIE | RX1IE | RX0IE,
+};
+
+/* Receive a CAN frame from the MCP2515. */
+static void
+recv_frame(void) {
+    uint8_t rx_status;
+    MCP2515_FilterMatch filter;
+    static uint8_t data[8];
+
+    rx_status = mcp2515_rx_status();
+    filter = mcp2515_filter_match(rx_status);
+    switch (filter) {
+    case RXF0:
+        mcp2515_read_data_rxb0(data);
+        // TODO
+    break; case RXF1:
+        mcp2515_read_data_rxb0(data);
+        // TODO
+    break; case RXF2:
+        mcp2515_read_data_rxb1(data);
+        // TODO
+    break; case RXF3:
+        mcp2515_read_data_rxb1(data);
+        // TODO
+    break; case RXF4:
+        mcp2515_read_data_rxb1(data);
+        // TODO
+    break; case RXF5:
+        mcp2515_read_data_rxb1(data);
+        // TODO
+    break; case RXF0_ROLLOVER_RXB1:
+        mcp2515_read_data_rxb1(data);
+        // TODO
+    break; case RXF1_ROLLOVER_RXB1:
+        mcp2515_read_data_rxb1(data);
+        // TODO
+    }
+}
+
+void interrupt
+isr(void) {
+    if (INTF) {
+        recv_frame();
+    }
+}
+
+int
+main(void) {
     SYSTEM_Initialize();
-    // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts 
-    // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts 
-    // Use the following macros to: 
 
-    // Enable the Global Interrupts 
-    //INTERRUPT_GlobalInterruptEnable(); 
+    INTERRUPT_Initialize();
+    INTERRUPT_PeripheralInterruptDisable();
+    EXT_INT_risingEdgeSet();
+    EXT_INT_InterruptEnable();
+    INTERRUPT_GlobalInterruptEnable();
 
-    // Disable the Global Interrupts 
-    //INTERRUPT_GlobalInterruptDisable(); 
+    mcp2515_init(&mcp2515_config);
+    
+    for (;;) {
+    }
+}
 
-    // Enable the Peripheral Interrupts 
-    //INTERRUPT_PeripheralInterruptEnable(); 
+void
+mcp2515_cs_lo(void) {
+    CS_SetLow();
+}
 
-    // Disable the Peripheral Interrupts 
-    //INTERRUPT_PeripheralInterruptDisable(); 
+void
+mcp2515_cs_hi(void) {
+    CS_SetHigh();
+}
 
+void
+mcp2515_sck_lo(void) {
+    SCK_SetLow();
+}
 
-    while(1)
-    {
-    }    
+void
+mcp2515_sck_hi(void) {
+    SCK_SetHigh();
+}
+
+void
+mcp2515_si_lo(void) {
+    SO_SetLow();
+}
+
+void
+mcp2515_si_hi(void) {
+    SO_SetHigh();
+}
+
+bool
+mcp2515_so(void) {
+    return SI_GetValue();
 }
