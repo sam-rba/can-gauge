@@ -48,7 +48,7 @@ recv_frame(void) {
     }
 }
 
-void interrupt
+void __interrupt()
 isr(void) {
     if (INTF) {
         recv_frame();

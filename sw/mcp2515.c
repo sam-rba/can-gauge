@@ -1,4 +1,5 @@
 /* Uses */
+#include <stdbool.h>
 #include <stdint.h>
 #include "util.h"
 
@@ -39,10 +40,11 @@ enum {
 
 /* Register addresses */
 enum {
+    BFPCTRL = 0x0C, /* RXnBF pin control and status register */
+    CANSTAT = 0x0E, /* CAN status register */
+    CANCTRL = 0x0F, /*  CAN control register */
     CANINTF = 0x2C, /* CAN interrupt flag register */
     RXB0CTRL = 0x60, /* receive buffer 0 control register */
-    CANCTRL = 0x0F, /*  CAN control register */
-    CANSTAT = 0x0E, /* CAN status register */
 } reg_addrs;
 
 /* Modes of operation */
@@ -62,7 +64,7 @@ tick(void) {
 
 static void
 write(uint8_t byt) {
-    unit8_t i;
+    uint8_t i;
 
     for (i = 7u; i >= 0u; i--) {
         if (byt & (1u << i)) {
@@ -130,7 +132,7 @@ mcp2515_init(const MCP2515_Config *config) {
 
 void
 mcp2515_reset(void) {
-    cs_lo(void);
+    cs_lo();
     write(RESET);
     cs_hi();
 }
@@ -174,7 +176,9 @@ mcp2515_filter_match(uint8_t rx_status) {
 
 static void
 read_data(uint8_t data[8]) {
-    for (i = 0u; i < nelem(data); i++) {
+    uint8_t i;
+
+    for (i = 0u; i < 8u; i++) {
         data[i] = read();
     }
 }

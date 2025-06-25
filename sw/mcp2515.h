@@ -1,5 +1,6 @@
 /* Usage:
  *
+ * #include <stdbool.h>
  * #include <stdint.h>
  * #include "mcp2515.h"
  * Define all client-provided functions.

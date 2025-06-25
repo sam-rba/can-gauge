@@ -1,0 +1,9 @@
+*.cmf
+*.d
+*.o
+*.p1
+*.s
+*.sdb
+*.sym
+*.lst
+*.rlf
