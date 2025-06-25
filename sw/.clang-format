@@ -1,0 +1,15 @@
+BasedOnStyle: LLVM
+
+IndentWidth: 8
+UseTab: Always
+IndentCaseLabels: false
+
+AlignConsecutiveAssignments: AcrossComments
+AlignConsecutiveMacros: Consecutive
+AlignTrailingComments: Always
+
+ColumnLimit: 0
+
+BreakAfterReturnType: AllDefinitions
+
+AllowShortIfStatementsOnASingleLine: Never
