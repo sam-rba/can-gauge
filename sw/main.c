@@ -68,7 +68,7 @@ main(void) {
 	SYSTEM_Initialize();
 
 	INTERRUPT_PeripheralInterruptDisable();
-	EXT_INT_risingEdgeSet();
+	EXT_INT_fallingEdgeSet();
 	INT_SetInterruptHandler(isr);
 	EXT_INT_InterruptEnable();
 	INTERRUPT_GlobalInterruptEnable();
