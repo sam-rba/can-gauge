@@ -1,9 +1,9 @@
 CC = xc8-cc
 CFLAGS= -mcpu=16F1619 -std=c99
 
-SRC = main.c mcp2515.c
-OBJ = ${SRC:.c=.p1}
-HDR = mcp2515.h util.h
+SRC = main.c mcp2515.c $(wildcard mcc_generated_files/system/src/*.c)
+OBJ = $(notdir ${SRC:.c=.p1})
+HDR = mcp2515.h util.h $(wildcard mcc_generated_files/system/*.h)
 
 main.hex: ${OBJ}
 	${CC} ${CFLAGS} $^ ${LDFLAGS}

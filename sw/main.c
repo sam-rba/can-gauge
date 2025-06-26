@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdint.h>
 
 #include "mcc_generated_files/system/interrupt.h"
@@ -56,7 +57,7 @@ recv_frame(void) {
 }
 
 void
-__interrupt() isr(void) {
+isr(void) {
 	if (INTF) {
 		recv_frame();
 	}
@@ -66,9 +67,9 @@ int
 main(void) {
 	SYSTEM_Initialize();
 
-	INTERRUPT_Initialize();
 	INTERRUPT_PeripheralInterruptDisable();
 	EXT_INT_risingEdgeSet();
+	INT_SetInterruptHandler(isr);
 	EXT_INT_InterruptEnable();
 	INTERRUPT_GlobalInterruptEnable();
 

@@ -8,7 +8,11 @@ AlignConsecutiveAssignments: AcrossComments
 AlignConsecutiveMacros: Consecutive
 AlignTrailingComments: Always
 
+SortIncludes: false
+
 ColumnLimit: 0
+
+LineEnding: LF
 
 BreakAfterReturnType: AllDefinitions
 

@@ -7,3 +7,6 @@
 *.sym
 *.lst
 *.rlf
+*.hxl
+*.hex
+*.elf

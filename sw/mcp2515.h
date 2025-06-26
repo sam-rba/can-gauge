@@ -57,7 +57,6 @@ typedef enum {
 
 /* To be defined by the client: */
 void mcp2515_cs_lo(void);
-
 void mcp2515_cs_hi(void);
 void mcp2515_sck_lo(void);
 void mcp2515_sck_hi(void);
