@@ -1,5 +1,5 @@
 /**
- * Configuration Bits Generated Driver Source File
+ * CONFIGURATION BITS Generated Driver Source File
  *
  * @file config_bits.c
  *
@@ -9,11 +9,11 @@
  *
  * @version Driver Version 1.0.1
  *
- * @version Package Version 1.0.2
+ * @version Package Version 1.0.3
  */
 
 /*
-? [2025] Microchip Technology Inc. and its subsidiaries.
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip
     software and any derivatives exclusively with Microchip products.
@@ -36,30 +36,26 @@
 // Configuration bits: selected in the GUI
 
 // CONFIG1
-#pragma config FOSC	= INTOSC // Oscillator Selection Bits->INTOSC oscillator: I/O function on CLKIN pin
+#pragma config FOSC	= INTOSC // Oscillator Selection->INTOSC oscillator: I/O function on CLKIN pin
+#pragma config WDTE	= OFF	 // Watchdog Timer Enable->WDT disabled
 #pragma config PWRTE	= OFF	 // Power-up Timer Enable->PWRT disabled
 #pragma config MCLRE	= OFF	 // MCLR Pin Function Select->MCLR/VPP pin function is digital input
 #pragma config CP	= OFF	 // Flash Program Memory Code Protection->Program memory code protection is disabled
 #pragma config BOREN	= ON	 // Brown-out Reset Enable->Brown-out Reset enabled
 #pragma config CLKOUTEN = ON	 // Clock Out Enable->CLKOUT function is enabled on the CLKOUT pin
-#pragma config IESO	= ON	 // Internal/External Switch Over->Internal External Switch Over mode is enabled
+#pragma config IESO	= ON	 // Internal/External Switchover->Internal/External Switchover Mode is enabled
 #pragma config FCMEN	= ON	 // Fail-Safe Clock Monitor Enable->Fail-Safe Clock Monitor is enabled
 
 // CONFIG2
-#pragma config WRT     = OFF // Flash Memory Self-Write Protection->Write protection off
-#pragma config ZCD     = OFF // Zero Cross Detect Disable Bit->ZCD disable. ZCD can be enabled by setting the ZCDSEN bit of ZCDCON
-#pragma config PLLEN   = OFF // PLL Enable Bit->4x PLL is enabled when software sets the SPLLEN bit
-#pragma config STVREN  = ON  // Stack Overflow/Underflow Reset Enable->Stack Overflow or Underflow will cause a Reset
-#pragma config BORV    = LO  // Brown-out Reset Voltage Selection->Brown-out Reset Voltage (Vbor), low trip point selected.
-#pragma config LPBOR   = OFF // Low-Power Brown Out Reset->Low-Power BOR is disabled
-#pragma config LVP     = ON  // Low-Voltage Programming Enable->Low-voltage programming enabled
-#pragma config PPS1WAY = ON  // Peripheral Pin Select one-way control->The PPSLOCK bit cannot be cleared once it is set by software
-
-// CONFIG3
-#pragma config WDTCPS = WDTCPS1F // WDT Period Select->Software Control (WDTPS)
-#pragma config WDTE   = OFF	 // Watchdog Timer Enable->WDT disabled
-#pragma config WDTCWS = WDTCWSSW // WDT Window Select->Software WDT window size control (WDTWS bits)
-#pragma config WDTCCS = SWC	 // WDT Input Clock Selector->Software control, controlled by WDTCS bits
+#pragma config WRT	= OFF	   // Flash Memory Self-Write Protection->Write protection off
+#pragma config PLLEN	= DISABLED // PLL Enable->3x or 4x PLL Disabled
+#pragma config STVREN	= ON	   // Stack Overflow/Underflow Reset Enable->Stack Overflow or Underflow will cause a Reset
+#pragma config BORV	= LO	   // Brown-out Reset Voltage Selection->Brown-out Reset Voltage (Vbor), low trip point selected.
+#pragma config LVP	= ON	   // Low-Voltage Programming Enable->Low-voltage programming enabled
+#pragma config LPBOR	= OFF	   // Low-Power Brown-out Reset Enable Bit->Low-Power BOR is disabled
+#pragma config CPUDIV	= NOCLKDIV // CPU System Clock Selection Bit->NO CPU system divide
+#pragma config USBLSCLK = 48MHz	   // USB Low Speed Clock Selection bit->System clock expects 48 MHz, FS/LS USB CLKENs divide-by is set to 8.
+#pragma config PLLMULT	= 3x	   // PLL Multiplier Selection Bit->3x Output Frequency Selected
 
 /**
  End of File

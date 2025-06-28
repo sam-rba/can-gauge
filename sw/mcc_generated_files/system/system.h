@@ -5,11 +5,11 @@
  *
  * @defgroup systemdriver System Driver
  *
- * @brief This file contains the API prototype for the System driver.
+ * @brief This file contains the API prototype for the System Driver.
  *
  * @version Driver Version 1.0.1
  *
- * @version Package Version 1.0.2
+ * @version Package Version 1.0.3
  */
 
 /*
@@ -54,6 +54,6 @@
 void SYSTEM_Initialize(void);
 
 #endif /* SYSTEM_H */
-       /**
-	End of File
-       */
+/**
+ End of File
+*/

@@ -38,12 +38,17 @@
 
 void
 CLOCK_Initialize(void) {
-	OSCCON = (15 << _OSCCON_IRCF_POSN)     // IRCF 16MHz_HF
-		 | (0 << _OSCCON_SCS_POSN)     // SCS FOSC
-		 | (0 << _OSCCON_SPLLEN_POSN); // SPLLEN disabled
-	BORCON = (0 << _BORCON_SBOREN_POSN)    // SBOREN disabled
-		 | (0 << _BORCON_BORFS_POSN);  // BORFS disabled
-	OSCTUNE = (0 << _OSCTUNE_TUN_POSN);    // TUN 0x0
+	// Set the CLOCK CONTROL module to the options selected in the user interface.
+	OSCCON = (0 << _OSCCON_SPLLEN_POSN)	// SPLLEN disabled
+		 | (0 << _OSCCON_SPLLMULT_POSN) // SPLLMULT 4xPLL
+		 | (15 << _OSCCON_IRCF_POSN)	// IRCF 16MHz_HF
+		 | (2 << _OSCCON_SCS_POSN);	// SCS INTOSC
+	OSCTUNE = (0 << _OSCTUNE_TUN_POSN);	// TUN 0x0
+	ACTCON	= (0 << _ACTCON_ACTEN_POSN)	// ACTEN disabled
+		 | (0 << _ACTCON_ACTUD_POSN)	// ACTUD enabled
+		 | (0 << _ACTCON_ACTSRC_POSN);	// ACTSRC SOSC
+	BORCON = (0 << _BORCON_SBOREN_POSN)	// SBOREN disabled
+		 | (0 << _BORCON_BORFS_POSN);	// BORFS disabled
 }
 /**
  End of File

@@ -12,7 +12,7 @@
  */
 
 /*
-? [2025] Microchip Technology Inc. and its subsidiaries.
+© [2025] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip
     software and any derivatives exclusively with Microchip products.
@@ -49,421 +49,369 @@
 #define PULL_UP_ENABLED	 1
 #define PULL_UP_DISABLED 0
 
-// get/set IO_RA2 aliases
-#define INT_TRIS TRISAbits.TRISA2
-#define INT_LAT	 LATAbits.LATA2
-#define INT_PORT PORTAbits.RA2
-#define INT_WPU	 WPUAbits.WPUA2
-#define INT_OD	 ODCONAbits.ODA2
-#define INT_ANS	 ANSELAbits.ANSA2
-#define INT_SetHigh()               \
-	do {                        \
-		LATAbits.LATA2 = 1; \
-	} while (0)
-#define INT_SetLow()                \
-	do {                        \
-		LATAbits.LATA2 = 0; \
-	} while (0)
-#define INT_Toggle()                              \
-	do {                                      \
-		LATAbits.LATA2 = ~LATAbits.LATA2; \
-	} while (0)
-#define INT_GetValue() PORTAbits.RA2
-#define INT_SetDigitalInput()         \
-	do {                          \
-		TRISAbits.TRISA2 = 1; \
-	} while (0)
-#define INT_SetDigitalOutput()        \
-	do {                          \
-		TRISAbits.TRISA2 = 0; \
-	} while (0)
-#define INT_SetPullup()             \
-	do {                        \
-		WPUAbits.WPUA2 = 1; \
-	} while (0)
-#define INT_ResetPullup()           \
-	do {                        \
-		WPUAbits.WPUA2 = 0; \
-	} while (0)
-#define INT_SetPushPull()            \
-	do {                         \
-		ODCONAbits.ODA2 = 0; \
-	} while (0)
-#define INT_SetOpenDrain()           \
-	do {                         \
-		ODCONAbits.ODA2 = 1; \
-	} while (0)
-#define INT_SetAnalogMode()           \
-	do {                          \
-		ANSELAbits.ANSA2 = 1; \
-	} while (0)
-#define INT_SetDigitalMode()          \
-	do {                          \
-		ANSELAbits.ANSA2 = 0; \
-	} while (0)
 // get/set IO_RB4 aliases
-#define SO_TRIS TRISBbits.TRISB4
-#define SO_LAT	LATBbits.LATB4
-#define SO_PORT PORTBbits.RB4
-#define SO_WPU	WPUBbits.WPUB4
-#define SO_OD	ODCONBbits.ODB4
-#define SO_ANS	ANSELBbits.ANSB4
-#define SO_SetHigh()                \
+#define SCK_TRIS TRISBbits.TRISB4
+#define SCK_LAT	 LATBbits.LATB4
+#define SCK_PORT PORTBbits.RB4
+#define SCK_WPU	 WPUBbits.WPUB4
+#define SCK_OD	 ODCONBbits.
+#define SCK_ANS	 ANSELBbits.ANSB4
+#define SCK_SetHigh()               \
 	do {                        \
 		LATBbits.LATB4 = 1; \
 	} while (0)
-#define SO_SetLow()                 \
+#define SCK_SetLow()                \
 	do {                        \
 		LATBbits.LATB4 = 0; \
 	} while (0)
-#define SO_Toggle()                               \
+#define SCK_Toggle()                              \
 	do {                                      \
 		LATBbits.LATB4 = ~LATBbits.LATB4; \
 	} while (0)
-#define SO_GetValue() PORTBbits.RB4
-#define SO_SetDigitalInput()          \
+#define SCK_GetValue() PORTBbits.RB4
+#define SCK_SetDigitalInput()         \
 	do {                          \
 		TRISBbits.TRISB4 = 1; \
 	} while (0)
-#define SO_SetDigitalOutput()         \
+#define SCK_SetDigitalOutput()        \
 	do {                          \
 		TRISBbits.TRISB4 = 0; \
 	} while (0)
-#define SO_SetPullup()              \
+#define SCK_SetPullup()             \
 	do {                        \
 		WPUBbits.WPUB4 = 1; \
 	} while (0)
-#define SO_ResetPullup()            \
+#define SCK_ResetPullup()           \
 	do {                        \
 		WPUBbits.WPUB4 = 0; \
 	} while (0)
-#define SO_SetPushPull()             \
-	do {                         \
-		ODCONBbits.ODB4 = 0; \
+#define SCK_SetPushPull()       \
+	do {                    \
+		ODCONBbits.= 0; \
 	} while (0)
-#define SO_SetOpenDrain()            \
-	do {                         \
-		ODCONBbits.ODB4 = 1; \
+#define SCK_SetOpenDrain()      \
+	do {                    \
+		ODCONBbits.= 1; \
 	} while (0)
-#define SO_SetAnalogMode()            \
+#define SCK_SetAnalogMode()           \
 	do {                          \
 		ANSELBbits.ANSB4 = 1; \
 	} while (0)
-#define SO_SetDigitalMode()           \
+#define SCK_SetDigitalMode()          \
 	do {                          \
 		ANSELBbits.ANSB4 = 0; \
 	} while (0)
 // get/set IO_RB5 aliases
-#define SCK_TRIS TRISBbits.TRISB5
-#define SCK_LAT	 LATBbits.LATB5
-#define SCK_PORT PORTBbits.RB5
-#define SCK_WPU	 WPUBbits.WPUB5
-#define SCK_OD	 ODCONBbits.ODB5
-#define SCK_ANS	 ANSELBbits.ANSB5
-#define SCK_SetHigh()               \
+#define CS_TRIS TRISBbits.TRISB5
+#define CS_LAT	LATBbits.LATB5
+#define CS_PORT PORTBbits.RB5
+#define CS_WPU	WPUBbits.WPUB5
+#define CS_OD	ODCONBbits.
+#define CS_ANS	ANSELBbits.ANSB5
+#define CS_SetHigh()                \
 	do {                        \
 		LATBbits.LATB5 = 1; \
 	} while (0)
-#define SCK_SetLow()                \
+#define CS_SetLow()                 \
 	do {                        \
 		LATBbits.LATB5 = 0; \
 	} while (0)
-#define SCK_Toggle()                              \
+#define CS_Toggle()                               \
 	do {                                      \
 		LATBbits.LATB5 = ~LATBbits.LATB5; \
 	} while (0)
-#define SCK_GetValue() PORTBbits.RB5
-#define SCK_SetDigitalInput()         \
+#define CS_GetValue() PORTBbits.RB5
+#define CS_SetDigitalInput()          \
 	do {                          \
 		TRISBbits.TRISB5 = 1; \
 	} while (0)
-#define SCK_SetDigitalOutput()        \
+#define CS_SetDigitalOutput()         \
 	do {                          \
 		TRISBbits.TRISB5 = 0; \
 	} while (0)
-#define SCK_SetPullup()             \
+#define CS_SetPullup()              \
 	do {                        \
 		WPUBbits.WPUB5 = 1; \
 	} while (0)
-#define SCK_ResetPullup()           \
+#define CS_ResetPullup()            \
 	do {                        \
 		WPUBbits.WPUB5 = 0; \
 	} while (0)
-#define SCK_SetPushPull()            \
-	do {                         \
-		ODCONBbits.ODB5 = 0; \
+#define CS_SetPushPull()        \
+	do {                    \
+		ODCONBbits.= 0; \
 	} while (0)
-#define SCK_SetOpenDrain()           \
-	do {                         \
-		ODCONBbits.ODB5 = 1; \
+#define CS_SetOpenDrain()       \
+	do {                    \
+		ODCONBbits.= 1; \
 	} while (0)
-#define SCK_SetAnalogMode()           \
+#define CS_SetAnalogMode()            \
 	do {                          \
 		ANSELBbits.ANSB5 = 1; \
 	} while (0)
-#define SCK_SetDigitalMode()          \
+#define CS_SetDigitalMode()           \
 	do {                          \
 		ANSELBbits.ANSB5 = 0; \
 	} while (0)
 // get/set IO_RB6 aliases
-#define CS_TRIS TRISBbits.TRISB6
-#define CS_LAT	LATBbits.LATB6
-#define CS_PORT PORTBbits.RB6
-#define CS_WPU	WPUBbits.WPUB6
-#define CS_OD	ODCONBbits.ODB6
-#define CS_ANS	ANSELBbits.ANSB6
-#define CS_SetHigh()                \
+#define SI_TRIS TRISBbits.TRISB6
+#define SI_LAT	LATBbits.LATB6
+#define SI_PORT PORTBbits.RB6
+#define SI_WPU	WPUBbits.WPUB6
+#define SI_OD	ODCONBbits.
+#define SI_ANS	ANSELBbits.
+#define SI_SetHigh()                \
 	do {                        \
 		LATBbits.LATB6 = 1; \
 	} while (0)
-#define CS_SetLow()                 \
+#define SI_SetLow()                 \
 	do {                        \
 		LATBbits.LATB6 = 0; \
 	} while (0)
-#define CS_Toggle()                               \
+#define SI_Toggle()                               \
 	do {                                      \
 		LATBbits.LATB6 = ~LATBbits.LATB6; \
 	} while (0)
-#define CS_GetValue() PORTBbits.RB6
-#define CS_SetDigitalInput()          \
+#define SI_GetValue() PORTBbits.RB6
+#define SI_SetDigitalInput()          \
 	do {                          \
 		TRISBbits.TRISB6 = 1; \
 	} while (0)
-#define CS_SetDigitalOutput()         \
+#define SI_SetDigitalOutput()         \
 	do {                          \
 		TRISBbits.TRISB6 = 0; \
 	} while (0)
-#define CS_SetPullup()              \
+#define SI_SetPullup()              \
 	do {                        \
 		WPUBbits.WPUB6 = 1; \
 	} while (0)
-#define CS_ResetPullup()            \
+#define SI_ResetPullup()            \
 	do {                        \
 		WPUBbits.WPUB6 = 0; \
 	} while (0)
-#define CS_SetPushPull()             \
-	do {                         \
-		ODCONBbits.ODB6 = 0; \
+#define SI_SetPushPull()        \
+	do {                    \
+		ODCONBbits.= 0; \
 	} while (0)
-#define CS_SetOpenDrain()            \
-	do {                         \
-		ODCONBbits.ODB6 = 1; \
+#define SI_SetOpenDrain()       \
+	do {                    \
+		ODCONBbits.= 1; \
 	} while (0)
-#define CS_SetAnalogMode()            \
-	do {                          \
-		ANSELBbits.ANSB6 = 1; \
+#define SI_SetAnalogMode()      \
+	do {                    \
+		ANSELBbits.= 1; \
 	} while (0)
-#define CS_SetDigitalMode()           \
-	do {                          \
-		ANSELBbits.ANSB6 = 0; \
-	} while (0)
-// get/set IO_RB7 aliases
-#define SI_TRIS TRISBbits.TRISB7
-#define SI_LAT	LATBbits.LATB7
-#define SI_PORT PORTBbits.RB7
-#define SI_WPU	WPUBbits.WPUB7
-#define SI_OD	ODCONBbits.ODB7
-#define SI_ANS	ANSELBbits.ANSB7
-#define SI_SetHigh()                \
-	do {                        \
-		LATBbits.LATB7 = 1; \
-	} while (0)
-#define SI_SetLow()                 \
-	do {                        \
-		LATBbits.LATB7 = 0; \
-	} while (0)
-#define SI_Toggle()                               \
-	do {                                      \
-		LATBbits.LATB7 = ~LATBbits.LATB7; \
-	} while (0)
-#define SI_GetValue() PORTBbits.RB7
-#define SI_SetDigitalInput()          \
-	do {                          \
-		TRISBbits.TRISB7 = 1; \
-	} while (0)
-#define SI_SetDigitalOutput()         \
-	do {                          \
-		TRISBbits.TRISB7 = 0; \
-	} while (0)
-#define SI_SetPullup()              \
-	do {                        \
-		WPUBbits.WPUB7 = 1; \
-	} while (0)
-#define SI_ResetPullup()            \
-	do {                        \
-		WPUBbits.WPUB7 = 0; \
-	} while (0)
-#define SI_SetPushPull()             \
-	do {                         \
-		ODCONBbits.ODB7 = 0; \
-	} while (0)
-#define SI_SetOpenDrain()            \
-	do {                         \
-		ODCONBbits.ODB7 = 1; \
-	} while (0)
-#define SI_SetAnalogMode()            \
-	do {                          \
-		ANSELBbits.ANSB7 = 1; \
-	} while (0)
-#define SI_SetDigitalMode()           \
-	do {                          \
-		ANSELBbits.ANSB7 = 0; \
-	} while (0)
-// get/set IO_RC0 aliases
-#define SER_TRIS TRISCbits.TRISC0
-#define SER_LAT	 LATCbits.LATC0
-#define SER_PORT PORTCbits.RC0
-#define SER_WPU	 WPUCbits.WPUC0
-#define SER_OD	 ODCONCbits.ODC0
-#define SER_ANS	 ANSELCbits.ANSC0
-#define SER_SetHigh()               \
-	do {                        \
-		LATCbits.LATC0 = 1; \
-	} while (0)
-#define SER_SetLow()                \
-	do {                        \
-		LATCbits.LATC0 = 0; \
-	} while (0)
-#define SER_Toggle()                              \
-	do {                                      \
-		LATCbits.LATC0 = ~LATCbits.LATC0; \
-	} while (0)
-#define SER_GetValue() PORTCbits.RC0
-#define SER_SetDigitalInput()         \
-	do {                          \
-		TRISCbits.TRISC0 = 1; \
-	} while (0)
-#define SER_SetDigitalOutput()        \
-	do {                          \
-		TRISCbits.TRISC0 = 0; \
-	} while (0)
-#define SER_SetPullup()             \
-	do {                        \
-		WPUCbits.WPUC0 = 1; \
-	} while (0)
-#define SER_ResetPullup()           \
-	do {                        \
-		WPUCbits.WPUC0 = 0; \
-	} while (0)
-#define SER_SetPushPull()            \
-	do {                         \
-		ODCONCbits.ODC0 = 0; \
-	} while (0)
-#define SER_SetOpenDrain()           \
-	do {                         \
-		ODCONCbits.ODC0 = 1; \
-	} while (0)
-#define SER_SetAnalogMode()           \
-	do {                          \
-		ANSELCbits.ANSC0 = 1; \
-	} while (0)
-#define SER_SetDigitalMode()          \
-	do {                          \
-		ANSELCbits.ANSC0 = 0; \
-	} while (0)
-// get/set IO_RC1 aliases
-#define SRCLK_TRIS TRISCbits.TRISC1
-#define SRCLK_LAT  LATCbits.LATC1
-#define SRCLK_PORT PORTCbits.RC1
-#define SRCLK_WPU  WPUCbits.WPUC1
-#define SRCLK_OD   ODCONCbits.ODC1
-#define SRCLK_ANS  ANSELCbits.ANSC1
-#define SRCLK_SetHigh()             \
-	do {                        \
-		LATCbits.LATC1 = 1; \
-	} while (0)
-#define SRCLK_SetLow()              \
-	do {                        \
-		LATCbits.LATC1 = 0; \
-	} while (0)
-#define SRCLK_Toggle()                            \
-	do {                                      \
-		LATCbits.LATC1 = ~LATCbits.LATC1; \
-	} while (0)
-#define SRCLK_GetValue() PORTCbits.RC1
-#define SRCLK_SetDigitalInput()       \
-	do {                          \
-		TRISCbits.TRISC1 = 1; \
-	} while (0)
-#define SRCLK_SetDigitalOutput()      \
-	do {                          \
-		TRISCbits.TRISC1 = 0; \
-	} while (0)
-#define SRCLK_SetPullup()           \
-	do {                        \
-		WPUCbits.WPUC1 = 1; \
-	} while (0)
-#define SRCLK_ResetPullup()         \
-	do {                        \
-		WPUCbits.WPUC1 = 0; \
-	} while (0)
-#define SRCLK_SetPushPull()          \
-	do {                         \
-		ODCONCbits.ODC1 = 0; \
-	} while (0)
-#define SRCLK_SetOpenDrain()         \
-	do {                         \
-		ODCONCbits.ODC1 = 1; \
-	} while (0)
-#define SRCLK_SetAnalogMode()         \
-	do {                          \
-		ANSELCbits.ANSC1 = 1; \
-	} while (0)
-#define SRCLK_SetDigitalMode()        \
-	do {                          \
-		ANSELCbits.ANSC1 = 0; \
+#define SI_SetDigitalMode()     \
+	do {                    \
+		ANSELBbits.= 0; \
 	} while (0)
 // get/set IO_RC2 aliases
-#define RCLK_TRIS TRISCbits.TRISC2
-#define RCLK_LAT  LATCbits.LATC2
-#define RCLK_PORT PORTCbits.RC2
-#define RCLK_WPU  WPUCbits.WPUC2
-#define RCLK_OD	  ODCONCbits.ODC2
-#define RCLK_ANS  ANSELCbits.ANSC2
-#define RCLK_SetHigh()              \
+#define SO_TRIS TRISCbits.TRISC2
+#define SO_LAT	LATCbits.LATC2
+#define SO_PORT PORTCbits.RC2
+#define SO_WPU	WPUCbits.
+#define SO_OD	ODCONCbits.
+#define SO_ANS	ANSELCbits.ANSC2
+#define SO_SetHigh()                \
 	do {                        \
 		LATCbits.LATC2 = 1; \
 	} while (0)
-#define RCLK_SetLow()               \
+#define SO_SetLow()                 \
 	do {                        \
 		LATCbits.LATC2 = 0; \
 	} while (0)
-#define RCLK_Toggle()                             \
+#define SO_Toggle()                               \
 	do {                                      \
 		LATCbits.LATC2 = ~LATCbits.LATC2; \
 	} while (0)
-#define RCLK_GetValue() PORTCbits.RC2
-#define RCLK_SetDigitalInput()        \
+#define SO_GetValue() PORTCbits.RC2
+#define SO_SetDigitalInput()          \
 	do {                          \
 		TRISCbits.TRISC2 = 1; \
 	} while (0)
-#define RCLK_SetDigitalOutput()       \
+#define SO_SetDigitalOutput()         \
 	do {                          \
 		TRISCbits.TRISC2 = 0; \
 	} while (0)
-#define RCLK_SetPullup()            \
-	do {                        \
-		WPUCbits.WPUC2 = 1; \
+#define SO_SetPullup()        \
+	do {                  \
+		WPUCbits.= 1; \
 	} while (0)
-#define RCLK_ResetPullup()          \
-	do {                        \
-		WPUCbits.WPUC2 = 0; \
+#define SO_ResetPullup()      \
+	do {                  \
+		WPUCbits.= 0; \
 	} while (0)
-#define RCLK_SetPushPull()           \
-	do {                         \
-		ODCONCbits.ODC2 = 0; \
+#define SO_SetPushPull()        \
+	do {                    \
+		ODCONCbits.= 0; \
 	} while (0)
-#define RCLK_SetOpenDrain()          \
-	do {                         \
-		ODCONCbits.ODC2 = 1; \
+#define SO_SetOpenDrain()       \
+	do {                    \
+		ODCONCbits.= 1; \
 	} while (0)
-#define RCLK_SetAnalogMode()          \
+#define SO_SetAnalogMode()            \
 	do {                          \
 		ANSELCbits.ANSC2 = 1; \
 	} while (0)
-#define RCLK_SetDigitalMode()         \
+#define SO_SetDigitalMode()           \
 	do {                          \
 		ANSELCbits.ANSC2 = 0; \
+	} while (0)
+// get/set IO_RC3 aliases
+#define SER_TRIS TRISCbits.TRISC3
+#define SER_LAT	 LATCbits.LATC3
+#define SER_PORT PORTCbits.RC3
+#define SER_WPU	 WPUCbits.
+#define SER_OD	 ODCONCbits.
+#define SER_ANS	 ANSELCbits.ANSC3
+#define SER_SetHigh()               \
+	do {                        \
+		LATCbits.LATC3 = 1; \
+	} while (0)
+#define SER_SetLow()                \
+	do {                        \
+		LATCbits.LATC3 = 0; \
+	} while (0)
+#define SER_Toggle()                              \
+	do {                                      \
+		LATCbits.LATC3 = ~LATCbits.LATC3; \
+	} while (0)
+#define SER_GetValue() PORTCbits.RC3
+#define SER_SetDigitalInput()         \
+	do {                          \
+		TRISCbits.TRISC3 = 1; \
+	} while (0)
+#define SER_SetDigitalOutput()        \
+	do {                          \
+		TRISCbits.TRISC3 = 0; \
+	} while (0)
+#define SER_SetPullup()       \
+	do {                  \
+		WPUCbits.= 1; \
+	} while (0)
+#define SER_ResetPullup()     \
+	do {                  \
+		WPUCbits.= 0; \
+	} while (0)
+#define SER_SetPushPull()       \
+	do {                    \
+		ODCONCbits.= 0; \
+	} while (0)
+#define SER_SetOpenDrain()      \
+	do {                    \
+		ODCONCbits.= 1; \
+	} while (0)
+#define SER_SetAnalogMode()           \
+	do {                          \
+		ANSELCbits.ANSC3 = 1; \
+	} while (0)
+#define SER_SetDigitalMode()          \
+	do {                          \
+		ANSELCbits.ANSC3 = 0; \
+	} while (0)
+// get/set IO_RC4 aliases
+#define SRCLK_TRIS TRISCbits.TRISC4
+#define SRCLK_LAT  LATCbits.LATC4
+#define SRCLK_PORT PORTCbits.RC4
+#define SRCLK_WPU  WPUCbits.
+#define SRCLK_OD   ODCONCbits.
+#define SRCLK_ANS  ANSELCbits.
+#define SRCLK_SetHigh()             \
+	do {                        \
+		LATCbits.LATC4 = 1; \
+	} while (0)
+#define SRCLK_SetLow()              \
+	do {                        \
+		LATCbits.LATC4 = 0; \
+	} while (0)
+#define SRCLK_Toggle()                            \
+	do {                                      \
+		LATCbits.LATC4 = ~LATCbits.LATC4; \
+	} while (0)
+#define SRCLK_GetValue() PORTCbits.RC4
+#define SRCLK_SetDigitalInput()       \
+	do {                          \
+		TRISCbits.TRISC4 = 1; \
+	} while (0)
+#define SRCLK_SetDigitalOutput()      \
+	do {                          \
+		TRISCbits.TRISC4 = 0; \
+	} while (0)
+#define SRCLK_SetPullup()     \
+	do {                  \
+		WPUCbits.= 1; \
+	} while (0)
+#define SRCLK_ResetPullup()   \
+	do {                  \
+		WPUCbits.= 0; \
+	} while (0)
+#define SRCLK_SetPushPull()     \
+	do {                    \
+		ODCONCbits.= 0; \
+	} while (0)
+#define SRCLK_SetOpenDrain()    \
+	do {                    \
+		ODCONCbits.= 1; \
+	} while (0)
+#define SRCLK_SetAnalogMode()   \
+	do {                    \
+		ANSELCbits.= 1; \
+	} while (0)
+#define SRCLK_SetDigitalMode()  \
+	do {                    \
+		ANSELCbits.= 0; \
+	} while (0)
+// get/set IO_RC5 aliases
+#define RCLK_TRIS TRISCbits.TRISC5
+#define RCLK_LAT  LATCbits.LATC5
+#define RCLK_PORT PORTCbits.RC5
+#define RCLK_WPU  WPUCbits.
+#define RCLK_OD	  ODCONCbits.
+#define RCLK_ANS  ANSELCbits.
+#define RCLK_SetHigh()              \
+	do {                        \
+		LATCbits.LATC5 = 1; \
+	} while (0)
+#define RCLK_SetLow()               \
+	do {                        \
+		LATCbits.LATC5 = 0; \
+	} while (0)
+#define RCLK_Toggle()                             \
+	do {                                      \
+		LATCbits.LATC5 = ~LATCbits.LATC5; \
+	} while (0)
+#define RCLK_GetValue() PORTCbits.RC5
+#define RCLK_SetDigitalInput()        \
+	do {                          \
+		TRISCbits.TRISC5 = 1; \
+	} while (0)
+#define RCLK_SetDigitalOutput()       \
+	do {                          \
+		TRISCbits.TRISC5 = 0; \
+	} while (0)
+#define RCLK_SetPullup()      \
+	do {                  \
+		WPUCbits.= 1; \
+	} while (0)
+#define RCLK_ResetPullup()    \
+	do {                  \
+		WPUCbits.= 0; \
+	} while (0)
+#define RCLK_SetPushPull()      \
+	do {                    \
+		ODCONCbits.= 0; \
+	} while (0)
+#define RCLK_SetOpenDrain()     \
+	do {                    \
+		ODCONCbits.= 1; \
+	} while (0)
+#define RCLK_SetAnalogMode()    \
+	do {                    \
+		ANSELCbits.= 1; \
+	} while (0)
+#define RCLK_SetDigitalMode()   \
+	do {                    \
+		ANSELCbits.= 0; \
 	} while (0)
 /**
  * @ingroup  pinsdriver

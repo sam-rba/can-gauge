@@ -5,11 +5,11 @@
  *
  * @ingroup systemdriver
  *
- * @brief This file contains the API implementation for the System driver.
+ * @brief This file contains the API implementation for the System Driver.
  *
  * @version Driver Version 1.0.1
  *
- * @version Package Version 1.0.2
+ * @version Package Version 1.0.3
  */
 
 /*

@@ -40,55 +40,44 @@ PIN_MANAGER_Initialize(void) {
 	 LATx registers
 	 */
 	LATA = 0x0;
-	LATB = 0x0;
+	LATB = 0x20;
 	LATC = 0x0;
 
 	/**
 	TRISx registers
 	*/
-	TRISA = 0x3F;
-	TRISB = 0x80;
-	TRISC = 0xF8;
+	TRISA = 0x3B;
+	TRISB = 0xC0;
+	TRISC = 0xC3;
 
 	/**
 	ANSELx registers
 	*/
-	ANSELA = 0x13;
+	ANSELA = 0x10;
 	ANSELB = 0x0;
-	ANSELC = 0xC8;
+	ANSELC = 0xC3;
 
 	/**
 	WPUx registers
 	*/
-	WPUA		      = 0x3F;
-	WPUB		      = 0xF0;
-	WPUC		      = 0xFF;
+	WPUA		      = 0x38;
+	WPUB		      = 0x80;
 	OPTION_REGbits.nWPUEN = 0x0;
 
 	/**
 	ODx registers
 	*/
 
-	ODCONA	= 0x0;
-	ODCONB	= 0x0;
-	ODCONC	= 0x0;
 	/**
 	SLRCONx registers
 	*/
-	SLRCONA = 0x37;
-	SLRCONB = 0xF0;
-	SLRCONC = 0xFF;
 	/**
 	INLVLx registers
 	*/
-	INLVLA	= 0x3F;
-	INLVLB	= 0xF0;
-	INLVLC	= 0xFF;
 
 	/**
 	PPS registers
 	*/
-	INTPPS = 0x2; // RA2->INTERRUPT MANAGER:INT;
 
 	/**
 	APFCON registers
@@ -103,9 +92,9 @@ PIN_MANAGER_Initialize(void) {
 	IOCBP = 0x0;
 	IOCBN = 0x0;
 	IOCBF = 0x0;
-	IOCCP = 0x0;
-	IOCCN = 0x0;
-	IOCCF = 0x0;
+
+	// Enable INTCONbits.IOCIE interrupt
+	INTCONbits.IOCIE = 1;
 }
 
 void

@@ -1,5 +1,5 @@
 /**
- * Configuration Bits Generated Driver Header File
+ * CONFIGURATION BITS Generated Driver Header File
  *
  * @file config_bits.h
  *
@@ -9,7 +9,7 @@
  *
  * @version Driver Version 1.0.1
  *
- * @version Package Version 1.0.2
+ * @version Package Version 1.0.3
  */
 
 /*

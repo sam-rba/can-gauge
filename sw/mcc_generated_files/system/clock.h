@@ -7,7 +7,7 @@
  *
  * @brief This file contains the API prototypes and other data types for the Clock driver.
  *
- * @version Driver Version 1.0.0
+ * @version Driver Version 1.0.1
  *
  * @version Package Version 1.0.2
  *
