@@ -4603,7 +4603,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MCU_Microchip_PIC16:PIC16F1459-IP"
+		(symbol "MCU_Microchip_PIC16:PIC16F1459-ISS"
 			(pin_names
 				(offset 1.016)
 			)
@@ -4619,7 +4619,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "PIC16F1459-IP"
+			(property "Value" "PIC16F1459-ISS"
 				(at -46.99 15.24 0)
 				(effects
 					(font
@@ -4673,7 +4673,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "PIC16F1459-IP_0_1"
+			(symbol "PIC16F1459-ISS_0_1"
 				(rectangle
 					(start -46.99 13.97)
 					(end 46.99 -21.59)
@@ -4686,7 +4686,7 @@
 					)
 				)
 			)
-			(symbol "PIC16F1459-IP_1_1"
+			(symbol "PIC16F1459-ISS_1_1"
 				(pin bidirectional line
 					(at -50.8 10.16 0)
 					(length 3.81)
@@ -9337,7 +9337,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_Microchip_PIC16:PIC16F1459-IP")
+		(lib_id "MCU_Microchip_PIC16:PIC16F1459-ISS")
 		(at 173.99 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9345,7 +9345,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "37e532f0-cbfc-481c-ba54-a992a9609baa")
+		(uuid "2eaa6e37-5ddf-4657-9bcc-32f09f3575ca")
 		(property "Reference" "U8"
 			(at 176.1333 33.02 0)
 			(effects
@@ -9355,7 +9355,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PIC16F1459-IP"
+		(property "Value" "PIC16F1459-ISS"
 			(at 176.1333 35.56 0)
 			(effects
 				(font
@@ -9391,65 +9391,65 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "b36d9d15-565c-4ca6-81ef-5992db2a35c5")
-		)
-		(pin "12"
-			(uuid "ff5b16f3-83d8-4b99-bfcf-c6d7d19a5a7f")
-		)
-		(pin "20"
-			(uuid "ca9e31fb-fccc-437d-930e-213e2aacce31")
-		)
-		(pin "13"
-			(uuid "2324f0f1-0564-4ba0-96d2-60cc0b824b65")
-		)
-		(pin "19"
-			(uuid "39a14a65-2057-4a4f-90d0-7e6914ef9319")
-		)
-		(pin "5"
-			(uuid "ba5ed871-4df8-405f-8388-3b91179160fd")
-		)
-		(pin "1"
-			(uuid "8d844679-7c6d-4399-8c53-49baa7755470")
-		)
-		(pin "10"
-			(uuid "786840cc-5a28-45a8-baa2-ea685cee4f79")
-		)
-		(pin "6"
-			(uuid "e0180396-ed86-4c13-bc68-2e7309ff2eb5")
+		(pin "7"
+			(uuid "db4cdb27-e1d5-4811-bced-3fb5ed375145")
 		)
 		(pin "9"
-			(uuid "33af8e57-31f1-40d6-a8ec-b92b6abf007c")
+			(uuid "33e92d10-b00c-445a-8118-6a6e0b740fcf")
 		)
-		(pin "11"
-			(uuid "194837ec-31cb-45e5-96eb-f3ef522205bf")
-		)
-		(pin "15"
-			(uuid "c53c29be-41fd-46fd-928f-efd0a7c2c26c")
-		)
-		(pin "7"
-			(uuid "2b457914-d8e9-4e47-b0a6-4e242e330feb")
-		)
-		(pin "16"
-			(uuid "1ef95fb8-5e77-4103-b143-fd4338bd42e5")
-		)
-		(pin "14"
-			(uuid "205dcd20-a220-4847-86b7-cf05b227b9f4")
-		)
-		(pin "18"
-			(uuid "50cd578d-4de8-48b4-95c9-7e78401ff377")
-		)
-		(pin "4"
-			(uuid "d06c7d6b-2a9a-4179-9409-8c9ccd8a82d4")
+		(pin "5"
+			(uuid "3312c53c-1fe0-49ee-bfdb-425b55c56a74")
 		)
 		(pin "17"
-			(uuid "276737f7-ea06-421e-a7cb-f7db9991ed24")
+			(uuid "b561b885-2cec-44a2-870a-cbb4ca8af36a")
+		)
+		(pin "16"
+			(uuid "b922ca81-9959-4159-b86a-adfbcee3dd64")
+		)
+		(pin "6"
+			(uuid "3b3ba397-cae0-4a61-9a7a-f850e00a8726")
+		)
+		(pin "1"
+			(uuid "89775bb5-66de-4a3b-abf5-87bb2033d9ea")
 		)
 		(pin "3"
-			(uuid "953ab8cd-f174-4ac3-a156-8bdbc109d628")
+			(uuid "f9f9a67c-7076-4f76-a87e-d040ea240a8b")
 		)
 		(pin "2"
-			(uuid "3e242e06-f851-4c6d-9259-a1e6a9825aa1")
+			(uuid "676a410c-9f40-46a6-a9f2-86d67dc529ce")
+		)
+		(pin "8"
+			(uuid "38b2823a-4faa-46d0-9aba-114b48e51fa7")
+		)
+		(pin "13"
+			(uuid "7f1fa3a7-ece9-4d38-a2ff-3c4e3476cb5a")
+		)
+		(pin "20"
+			(uuid "db7a8c79-2874-4952-96fe-dd1b6558c00b")
+		)
+		(pin "12"
+			(uuid "18b7d18e-8984-4ef2-b282-ab739f2464fe")
+		)
+		(pin "11"
+			(uuid "0ec5e3c6-e3be-4449-8f1c-c6f97aade417")
+		)
+		(pin "10"
+			(uuid "599900c6-8177-4945-bee3-6b514a09a708")
+		)
+		(pin "18"
+			(uuid "e5a968a9-7afb-450f-89cb-cdc83ecac121")
+		)
+		(pin "19"
+			(uuid "221463a3-bf21-426b-bd2d-5339bafbcd67")
+		)
+		(pin "4"
+			(uuid "09a83964-e71e-42dc-b30c-f02fbb954248")
+		)
+		(pin "15"
+			(uuid "6dc70245-84f7-4f34-ac5b-2d2ec70970bc")
+		)
+		(pin "14"
+			(uuid "f18e1b0a-5148-4cc0-a701-cbb6f3234713")
 		)
 		(instances
 			(project ""
