@@ -3962,7 +3962,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_CAN_LIN:MCP2515-xSO"
+		(symbol "Interface_CAN_LIN:MCP2515-xST"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3975,7 +3975,7 @@
 					(justify right)
 				)
 			)
-			(property "Value" "MCP2515-xSO"
+			(property "Value" "MCP2515-xST"
 				(at 19.05 20.32 0)
 				(effects
 					(font
@@ -3984,7 +3984,7 @@
 					(justify right top)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm"
+			(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
 				(at 0 -22.86 0)
 				(effects
 					(font
@@ -4003,7 +4003,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Stand-Alone CAN Controller with SPI Interface, SOIC-18"
+			(property "Description" "Stand-Alone CAN Controller with SPI Interface, TSSOP-20"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4021,7 +4021,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*7.5x11.6mm*P1.27mm*"
+			(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4030,7 +4030,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP2515-xSO_0_1"
+			(symbol "MCP2515-xST_0_1"
 				(rectangle
 					(start -12.7 17.78)
 					(end 12.7 -17.78)
@@ -4043,7 +4043,7 @@
 					)
 				)
 			)
-			(symbol "MCP2515-xSO_1_1"
+			(symbol "MCP2515-xST_1_1"
 				(pin input line
 					(at -15.24 15.24 0)
 					(length 2.54)
@@ -4054,7 +4054,7 @@
 							)
 						)
 					)
-					(number "14"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4072,7 +4072,7 @@
 							)
 						)
 					)
-					(number "15"
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4090,7 +4090,7 @@
 							)
 						)
 					)
-					(number "16"
+					(number "18"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4108,7 +4108,7 @@
 							)
 						)
 					)
-					(number "13"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4126,7 +4126,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4144,7 +4144,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4170,6 +4170,44 @@
 						)
 					)
 				)
+				(pin no_connect line
+					(at -12.7 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at 0 20.32 270)
 					(length 2.54)
@@ -4180,7 +4218,7 @@
 							)
 						)
 					)
-					(number "18"
+					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4198,7 +4236,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4252,7 +4290,7 @@
 							)
 						)
 					)
-					(number "12"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4270,7 +4308,7 @@
 							)
 						)
 					)
-					(number "11"
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4288,7 +4326,7 @@
 							)
 						)
 					)
-					(number "10"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4342,7 +4380,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4360,7 +4398,7 @@
 							)
 						)
 					)
-					(number "17"
+					(number "19"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4371,7 +4409,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_CAN_LIN:MCP2561-E-P"
+		(symbol "Interface_CAN_LIN:MCP2561-E-SN"
 			(pin_names
 				(offset 1.016)
 			)
@@ -4387,7 +4425,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "MCP2561-E-P"
+			(property "Value" "MCP2561-E-SN"
 				(at 2.54 8.89 0)
 				(effects
 					(font
@@ -4396,7 +4434,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 				(at 0 -12.7 0)
 				(effects
 					(font
@@ -4415,7 +4453,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "High-Speed CAN Transceiver, 1Mbps, 5V supply, SPLIT pin, -40C to +125C, DIP-8"
+			(property "Description" "High-Speed CAN Transceiver, 1Mbps, 5V supply, SPLIT pin, -40C to +125C, SOIC-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4433,7 +4471,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm*"
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4442,7 +4480,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP2561-E-P_0_1"
+			(symbol "MCP2561-E-SN_0_1"
 				(rectangle
 					(start -10.16 7.62)
 					(end 10.16 -7.62)
@@ -4455,7 +4493,7 @@
 					)
 				)
 			)
-			(symbol "MCP2561-E-P_1_1"
+			(symbol "MCP2561-E-SN_1_1"
 				(pin input line
 					(at -12.7 5.08 0)
 					(length 2.54)
@@ -8889,7 +8927,7 @@
 				)
 			)
 		)
-		(property "Value" "LM2940xT"
+		(property "Value" "LM2940IMPX-5.0/NOPB"
 			(at 121.92 224.79 0)
 			(effects
 				(font
@@ -8897,7 +8935,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
 			(at 121.92 224.155 0)
 			(effects
 				(font
@@ -8907,7 +8945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm2940-n.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1748878933216&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flm2940-n"
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm2940-n"
 			(at 121.92 231.14 0)
 			(effects
 				(font
@@ -9240,7 +9278,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm"
 			(at 173.99 52.07 0)
 			(effects
 				(font
@@ -9337,6 +9375,131 @@
 		)
 	)
 	(symbol
+		(lib_id "Interface_CAN_LIN:MCP2515-xST")
+		(at 50.8 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35e5fd00-be70-4507-92aa-354532837183")
+		(property "Reference" "U10"
+			(at 52.9433 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP2515-xST"
+			(at 52.9433 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 50.8 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf"
+			(at 53.34 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Stand-Alone CAN Controller with SPI Interface, TSSOP-20"
+			(at 50.8 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "fe5d337e-4c9f-442b-83f9-5b7e6f2c3427")
+		)
+		(pin "18"
+			(uuid "655cc104-cfd3-4bc1-8c5f-bc723b396c0c")
+		)
+		(pin "20"
+			(uuid "35fa8ef1-1811-496b-8f60-6e3c1b183ef5")
+		)
+		(pin "19"
+			(uuid "83e67255-2019-4787-aa24-54ca19acb828")
+		)
+		(pin "14"
+			(uuid "b52a0442-bcc2-45da-b50e-f2ede74c5f3e")
+		)
+		(pin "7"
+			(uuid "183600cb-4928-41ad-8d5b-5a6e747f7eb8")
+		)
+		(pin "6"
+			(uuid "36a1b6fd-f3a3-49d9-97cb-77c7c651d357")
+		)
+		(pin "10"
+			(uuid "486ea540-9317-4783-b969-8dcc139b1bbb")
+		)
+		(pin "3"
+			(uuid "ad1e0068-15a8-466c-ad35-ecc76f4747fc")
+		)
+		(pin "15"
+			(uuid "4e086718-0d34-4a3a-a9f5-e35abb9651ea")
+		)
+		(pin "12"
+			(uuid "a929ae6e-c511-4f5d-aa77-901c73d4c120")
+		)
+		(pin "1"
+			(uuid "6becce38-4bd3-4572-a6b0-3873b2159ef4")
+		)
+		(pin "4"
+			(uuid "5f89d7b0-5419-4dbc-b9c2-44a29ea88e21")
+		)
+		(pin "2"
+			(uuid "6975c44b-293a-46bb-952c-a017f5d795b9")
+		)
+		(pin "9"
+			(uuid "95ab42dc-55ae-4707-af13-905c41dc67e5")
+		)
+		(pin "11"
+			(uuid "cea5fdea-9e7a-4f31-b5a8-b6415c36ba8b")
+		)
+		(pin "17"
+			(uuid "35ca173a-6376-42aa-8ca6-70e81365968e")
+		)
+		(pin "16"
+			(uuid "506b380e-0500-4f81-a39a-b77d48132969")
+		)
+		(pin "8"
+			(uuid "6ab3428e-ced6-4fb5-b0db-1f94d83f2fcf")
+		)
+		(pin "13"
+			(uuid "19960011-0b5a-4819-b80f-b9e1c5ef0b21")
+		)
+		(instances
+			(project ""
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC595")
 		(at 267.97 128.27 0)
 		(unit 1)
@@ -9364,7 +9527,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
 			(at 267.97 128.27 0)
 			(effects
 				(font
@@ -10650,6 +10813,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Interface_CAN_LIN:MCP2561-E-SN")
+		(at 50.8 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96f8e1b9-858d-4593-85ce-2a072eb7674a")
+		(property "Reference" "U9"
+			(at 52.9433 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP2561T-E/SN"
+			(at 52.9433 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 50.8 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20005167C.pdf"
+			(at 50.8 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "High-Speed CAN Transceiver, 1Mbps, 5V supply, SPLIT pin, -40C to +125C, SOIC-8"
+			(at 50.8 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4ae5d0d3-0f1e-48d1-9a4d-8656b4f579ff")
+		)
+		(pin "5"
+			(uuid "814d0cb0-9c48-4103-8d39-da82db468316")
+		)
+		(pin "7"
+			(uuid "36b28531-2ce1-44e0-b636-7e89d0d71166")
+		)
+		(pin "8"
+			(uuid "87c1846c-6504-4c5e-ac66-c5980c464a81")
+		)
+		(pin "4"
+			(uuid "ce8f212d-bfa8-4701-85be-b1b68df7e26c")
+		)
+		(pin "1"
+			(uuid "4bde890e-0021-4880-a760-e0d3ae0de854")
+		)
+		(pin "6"
+			(uuid "cd92f910-8e71-4c06-8e19-233f344fbf7e")
+		)
+		(pin "2"
+			(uuid "a3fbe16d-7b27-4e03-bdf5-7ccd208106f8")
+		)
+		(instances
+			(project ""
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:DIN41612_02x16_AB")
 		(at 59.69 220.98 0)
 		(unit 1)
@@ -10940,94 +11191,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Interface_CAN_LIN:MCP2561-E-P")
-		(at 50.8 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a27475de-e9bb-4b6d-8ca3-640675f4791e")
-		(property "Reference" "XCVR1"
-			(at 52.8194 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP2561-E-P"
-			(at 52.8194 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 50.8 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf"
-			(at 50.8 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 50.8 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "992b5207-2853-40bb-b780-178be6e4be73")
-		)
-		(pin "2"
-			(uuid "54c45558-17dc-4c6d-9e99-d0d6899ccc20")
-		)
-		(pin "3"
-			(uuid "1e90fb9b-a543-4c5b-be36-aae9220dfce8")
-		)
-		(pin "4"
-			(uuid "43974b42-1d1f-48fe-8af5-471a86c34bf8")
-		)
-		(pin "5"
-			(uuid "8b767341-10df-441f-966a-33eeae3655b3")
-		)
-		(pin "6"
-			(uuid "ee822f3a-b725-49a8-b38f-c793141d3ddc")
-		)
-		(pin "7"
-			(uuid "d7b7f2ab-1a3d-4b88-9f92-3b913fd5dc31")
-		)
-		(pin "8"
-			(uuid "04531dc9-b6b4-48ec-b64f-49a9ee23e9a4")
-		)
-		(instances
-			(project ""
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "XCVR1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "+5V_4")
 		(lib_id "power:+5V")
 		(at 344.17 49.53 0)
@@ -11254,7 +11417,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 332.74 134.62 0)
 			(effects
 				(font
@@ -11433,7 +11596,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 332.74 73.66 0)
 			(effects
 				(font
@@ -11882,7 +12045,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 332.74 195.58 0)
 			(effects
 				(font
@@ -12330,7 +12493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
 			(at 267.97 64.77 0)
 			(effects
 				(font
@@ -12509,7 +12672,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
 			(at 267.97 191.77 0)
 			(effects
 				(font
@@ -12935,125 +13098,6 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_CAN_LIN:MCP2515-xSO")
-		(at 50.8 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef31dd40-c093-440b-9a7c-874670a126f9")
-		(property "Reference" "U2"
-			(at 52.9433 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP2515-xSO"
-			(at 52.9433 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-18_W7.62mm"
-			(at 50.8 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf"
-			(at 53.34 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Stand-Alone CAN Controller with SPI Interface, SOIC-18"
-			(at 50.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "662a22a4-6682-4196-a4e0-e481168a9b07")
-		)
-		(pin "10"
-			(uuid "ca7a3fa6-955b-4513-ba81-6db0518bbd10")
-		)
-		(pin "8"
-			(uuid "1b74174e-a2d5-4202-a8d1-d704c90c1327")
-		)
-		(pin "2"
-			(uuid "d89bf0d0-579f-46ae-ad5c-f2578edca703")
-		)
-		(pin "12"
-			(uuid "8fa6aa1f-a1a2-4e6c-874f-6df19adda4ab")
-		)
-		(pin "1"
-			(uuid "18126d19-5b99-423f-99d6-d33869293e8d")
-		)
-		(pin "9"
-			(uuid "26371320-68bc-49c4-b499-e1d85c5901d3")
-		)
-		(pin "3"
-			(uuid "c7ab3820-6a63-4235-bf98-6456e7e1228b")
-		)
-		(pin "15"
-			(uuid "63c767d3-6281-43ba-a70d-a53ade715f98")
-		)
-		(pin "16"
-			(uuid "d1312da7-d59a-495c-9458-62ec775b9127")
-		)
-		(pin "14"
-			(uuid "bc168a76-f759-486c-96a5-72c519f7b56c")
-		)
-		(pin "13"
-			(uuid "5866b0db-ad53-482a-88f4-ddc069e45bd7")
-		)
-		(pin "17"
-			(uuid "271d61d8-a251-485c-8c60-ce555f426ac8")
-		)
-		(pin "5"
-			(uuid "c1226c84-e23d-4dfe-b090-bea8d4674118")
-		)
-		(pin "7"
-			(uuid "baaeee6a-ebdd-4f24-b03b-6e6d1995798d")
-		)
-		(pin "18"
-			(uuid "0227c50e-272e-45f8-affa-afd3870fbe6a")
-		)
-		(pin "4"
-			(uuid "a78404b0-5851-4cce-a539-813a89b7f241")
-		)
-		(pin "11"
-			(uuid "b437a1a3-4ead-4ed6-9d12-f522264d6249")
-		)
-		(instances
-			(project ""
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "U2")
 					(unit 1)
 				)
 			)
