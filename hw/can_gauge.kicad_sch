@@ -6083,6 +6083,12 @@
 		(uuid "1634b0dc-7b03-4cdd-a5cb-bc204d01301f")
 	)
 	(junction
+		(at 143.51 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ae1597b-81c7-41fd-b3fd-fa14ac2551bf")
+	)
+	(junction
 		(at 238.76 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6105,6 +6111,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8967f843-13ef-41b1-82f3-09545646fc59")
+	)
+	(junction
+		(at 138.43 237.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92d8302f-a474-44bd-815a-59452344d8df")
 	)
 	(junction
 		(at 248.92 57.15)
@@ -6308,6 +6320,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 237.49) (xy 143.51 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "173964ef-e7e2-4e09-aaa8-8af699db1418")
+	)
+	(wire
+		(pts
 			(xy 254 157.48) (xy 254 181.61)
 		)
 		(stroke
@@ -6498,6 +6520,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 237.49) (xy 143.51 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49fe75cc-3e3f-44e7-ae94-0441516d1509")
+	)
+	(wire
+		(pts
 			(xy 248.92 57.15) (xy 255.27 57.15)
 		)
 		(stroke
@@ -6535,6 +6567,16 @@
 			(type default)
 		)
 		(uuid "555f021c-ab0b-4b8a-bb92-b0b5661e17bc")
+	)
+	(wire
+		(pts
+			(xy 132.08 237.49) (xy 138.43 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5be1b6a4-d53a-4993-9d93-ba0e6ea59d60")
 	)
 	(wire
 		(pts
@@ -6595,6 +6637,16 @@
 			(type default)
 		)
 		(uuid "63b74ce1-2fb1-4fc9-a6da-5fe89679cf3e")
+	)
+	(wire
+		(pts
+			(xy 132.08 234.95) (xy 132.08 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64f8df91-606b-4906-a2f3-4de80ade61af")
 	)
 	(wire
 		(pts
@@ -6828,7 +6880,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 229.87) (xy 132.08 229.87)
+			(xy 152.4 229.87) (xy 143.51 229.87)
 		)
 		(stroke
 			(width 0)
@@ -6885,6 +6937,16 @@
 			(type default)
 		)
 		(uuid "a2e0fc1f-d3a0-4eee-b2a1-950cf8e36729")
+	)
+	(wire
+		(pts
+			(xy 143.51 229.87) (xy 132.08 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7544e10-ca05-40d9-aba0-8df5e7317cb9")
 	)
 	(wire
 		(pts
@@ -8714,7 +8776,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 142.24 229.87 0)
+		(at 152.4 229.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8723,7 +8785,7 @@
 		(fields_autoplaced yes)
 		(uuid "12d19dc5-beca-4564-96f3-b9733cacb830")
 		(property "Reference" "#PWR0105"
-			(at 142.24 233.68 0)
+			(at 152.4 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8732,7 +8794,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 142.24 224.79 0)
+			(at 152.4 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8740,7 +8802,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 229.87 0)
+			(at 152.4 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8749,7 +8811,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 229.87 0)
+			(at 152.4 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8758,7 +8820,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 229.87 0)
+			(at 152.4 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9006,7 +9068,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 106.68 52.07 0)
 			(effects
 				(font
@@ -9015,7 +9077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 106.68 52.07 0)
 			(effects
 				(font
@@ -9026,6 +9088,15 @@
 		)
 		(property "Description" "Resistor, small US symbol"
 			(at 106.68 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073"
+			(at 106.68 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9076,7 +9147,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 105.41 232.41 0)
 			(effects
 				(font
@@ -9085,7 +9156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/41/CL10B474KA8VPNC_Spec.pdf"
 			(at 105.41 232.41 0)
 			(effects
 				(font
@@ -9095,6 +9166,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 105.41 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B474KA8VPNC/5961099"
 			(at 105.41 232.41 0)
 			(effects
 				(font
@@ -9621,7 +9701,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a162d5f-ae33-46a9-836d-7494393208c8")
-		(property "Reference" "C3"
+		(property "Reference" "C4"
 			(at 180.3463 19.05 90)
 			(effects
 				(font
@@ -9637,7 +9717,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 180.34 25.4 0)
 			(effects
 				(font
@@ -9646,7 +9726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 180.34 25.4 0)
 			(effects
 				(font
@@ -9664,6 +9744,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+			(at 180.34 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d18ef9f2-8483-48e8-9215-b7fa4a53f06d")
 		)
@@ -9673,7 +9762,7 @@
 		(instances
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C3")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -10344,6 +10433,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 71.12 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d214f6f-4354-4118-badb-176da7d96da4")
+		(property "Reference" "R2"
+			(at 71.12 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 71.12 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 71.12 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 71.12 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 71.12 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073"
+			(at 71.12 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee561659-610e-4144-b40f-8d15275c53bb")
+		)
+		(pin "1"
+			(uuid "b25e420a-7bc6-4159-8c83-cbce9ca262cf")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "+5V_8")
 		(lib_id "power:+5V")
 		(at 243.84 125.73 0)
@@ -10807,6 +10973,71 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138.43 237.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fb8ea6d-d8f9-48f6-8869-7451015d90e5")
+		(property "Reference" "#PWR0110"
+			(at 138.43 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "64d3a7c3-26bf-40a0-af22-c77faa9a0a58")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -11512,7 +11743,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0199203-191b-4451-99a7-2b69043829e3")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 57.1563 100.33 90)
 			(effects
 				(font
@@ -11528,7 +11759,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 57.15 106.68 0)
 			(effects
 				(font
@@ -11537,7 +11768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 57.15 106.68 0)
 			(effects
 				(font
@@ -11555,6 +11786,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+			(at 57.15 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "023d0665-f411-4b39-9f36-bc9243670529")
 		)
@@ -11564,7 +11804,7 @@
 		(instances
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -11758,7 +11998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b94a7019-1478-4f2d-84b2-e11e73c36682")
-		(property "Reference" "C4"
+		(property "Reference" "C5"
 			(at 57.1563 20.32 90)
 			(effects
 				(font
@@ -11774,7 +12014,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 57.15 26.67 0)
 			(effects
 				(font
@@ -11783,7 +12023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 57.15 26.67 0)
 			(effects
 				(font
@@ -11801,6 +12041,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+			(at 57.15 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bdb0f6e3-fcea-4d4d-9676-fc6967c4023d")
 		)
@@ -11810,7 +12059,7 @@
 		(instances
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C4")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -11893,7 +12142,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b996f501-4f34-4a2b-8f35-7166b2447cb7")
-		(property "Reference" "C6"
+		(property "Reference" "C9"
 			(at 274.3263 165.1 90)
 			(effects
 				(font
@@ -11909,7 +12158,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 274.32 171.45 0)
 			(effects
 				(font
@@ -11918,7 +12167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 274.32 171.45 0)
 			(effects
 				(font
@@ -11936,6 +12185,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+			(at 274.32 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2154a7ac-df36-480c-a640-014ea74b6ce4")
 		)
@@ -11945,75 +12203,7 @@
 		(instances
 			(project "can_gauge"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 71.12 71.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9e069e0-167e-4133-a6fa-cfbafe69a588")
-		(property "Reference" "R2"
-			(at 71.12 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 71.12 67.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 71.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ad1777d7-8a74-4210-85fb-002b465264f6")
-		)
-		(pin "1"
-			(uuid "468a1c39-cf2e-48ec-8331-b8017151c032")
-		)
-		(instances
-			(project ""
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "R2")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -12775,7 +12965,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47 uF"
+		(property "Value" "22 uF"
 			(at 134.62 233.1338 0)
 			(effects
 				(font
@@ -12784,7 +12974,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C"
 			(at 132.08 232.41 0)
 			(effects
 				(font
@@ -12793,7 +12983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/TAJ_AUTO.pdf"
 			(at 132.08 232.41 0)
 			(effects
 				(font
@@ -12811,7 +13001,16 @@
 				(hide yes)
 			)
 		)
-		(property "ESR" "500 m"
+		(property "ESR" "1 Ohm"
+			(at 132.08 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/kyocera-avx/TAJC226M016TNJ/11206808"
 			(at 132.08 232.41 0)
 			(effects
 				(font
@@ -12845,7 +13044,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc2862a3-eea8-4234-9c74-a4c003da78cf")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 274.3263 38.1 90)
 			(effects
 				(font
@@ -12861,7 +13060,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 274.32 44.45 0)
 			(effects
 				(font
@@ -12870,7 +13069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 274.32 44.45 0)
 			(effects
 				(font
@@ -12881,6 +13080,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 274.32 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+			(at 274.32 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12897,7 +13105,7 @@
 		(instances
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -12913,7 +13121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1fa8794-9c26-4f9f-addf-93ae99072860")
-		(property "Reference" "C6"
+		(property "Reference" "C8"
 			(at 274.3263 101.6 90)
 			(effects
 				(font
@@ -12929,7 +13137,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 274.32 107.95 0)
 			(effects
 				(font
@@ -12938,7 +13146,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
 			(at 274.32 107.95 0)
 			(effects
 				(font
@@ -12956,6 +13164,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+			(at 274.32 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "808e0d7e-ff3c-4e65-90b6-60c7d9b87708")
 		)
@@ -12965,24 +13182,42 @@
 		(instances
 			(project "can_gauge"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C6")
+					(reference "C8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 132.08 234.95 0)
+		(lib_id "Device:C_Polarized_Small")
+		(at 143.51 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "eb431037-0384-4466-a15a-37a55d173c56")
-		(property "Reference" "#PWR0109"
-			(at 132.08 241.3 0)
+		(uuid "e81f0f0d-cec0-45cb-80bd-17c3a18610a9")
+		(property "Reference" "C3"
+			(at 146.05 230.5938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22 uF"
+			(at 146.05 233.1338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C"
+			(at 143.51 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12990,16 +13225,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 132.08 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 234.95 0)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/TAJ_AUTO.pdf"
+			(at 143.51 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13007,8 +13234,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 132.08 234.95 0)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 143.51 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13016,21 +13243,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 132.08 234.95 0)
+		(property "ESR" "1 Ohm"
+			(at 143.51 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/kyocera-avx/TAJC226M016TNJ/11206808"
+			(at 143.51 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9cdc3c2f-7aa7-4ae7-ae12-cd3baaaeb7f2")
 		)
 		(pin "1"
-			(uuid "96ef75ee-2251-4fc6-8677-867e0a000f24")
+			(uuid "da68b501-892f-4ba7-8909-9d7df240a822")
 		)
 		(instances
 			(project "can_gauge"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "#PWR0109")
+					(reference "C3")
 					(unit 1)
 				)
 			)
