@@ -3829,7 +3829,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MCU_Microchip_PIC16:PIC16F1459-ISS"
+		(symbol "MCU_Microchip_PIC16:PIC16F1459-IP"
 			(pin_names
 				(offset 1.016)
 			)
@@ -3845,7 +3845,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "PIC16F1459-ISS"
+			(property "Value" "PIC16F1459-IP"
 				(at -46.99 15.24 0)
 				(effects
 					(font
@@ -3899,7 +3899,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "PIC16F1459-ISS_0_1"
+			(symbol "PIC16F1459-IP_0_1"
 				(rectangle
 					(start -46.99 13.97)
 					(end 46.99 -21.59)
@@ -3912,7 +3912,7 @@
 					)
 				)
 			)
-			(symbol "PIC16F1459-ISS_1_1"
+			(symbol "PIC16F1459-IP_1_1"
 				(pin bidirectional line
 					(at -50.8 10.16 0)
 					(length 3.81)
@@ -8886,130 +8886,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_Microchip_PIC16:PIC16F1459-ISS")
-		(at 173.99 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2eaa6e37-5ddf-4657-9bcc-32f09f3575ca")
-		(property "Reference" "U1"
-			(at 176.1333 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PIC16F1459-ISS"
-			(at 176.1333 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm"
-			(at 173.99 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/41639A.pdf"
-			(at 173.99 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PIC16F1454, 8192W FLASH, 1024B SRAM, PDIP-20"
-			(at 173.99 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "db4cdb27-e1d5-4811-bced-3fb5ed375145")
-		)
-		(pin "9"
-			(uuid "33e92d10-b00c-445a-8118-6a6e0b740fcf")
-		)
-		(pin "5"
-			(uuid "3312c53c-1fe0-49ee-bfdb-425b55c56a74")
-		)
-		(pin "17"
-			(uuid "b561b885-2cec-44a2-870a-cbb4ca8af36a")
-		)
-		(pin "16"
-			(uuid "b922ca81-9959-4159-b86a-adfbcee3dd64")
-		)
-		(pin "6"
-			(uuid "3b3ba397-cae0-4a61-9a7a-f850e00a8726")
-		)
-		(pin "1"
-			(uuid "89775bb5-66de-4a3b-abf5-87bb2033d9ea")
-		)
-		(pin "3"
-			(uuid "f9f9a67c-7076-4f76-a87e-d040ea240a8b")
-		)
-		(pin "2"
-			(uuid "676a410c-9f40-46a6-a9f2-86d67dc529ce")
-		)
-		(pin "8"
-			(uuid "38b2823a-4faa-46d0-9aba-114b48e51fa7")
-		)
-		(pin "13"
-			(uuid "7f1fa3a7-ece9-4d38-a2ff-3c4e3476cb5a")
-		)
-		(pin "20"
-			(uuid "db7a8c79-2874-4952-96fe-dd1b6558c00b")
-		)
-		(pin "12"
-			(uuid "18b7d18e-8984-4ef2-b282-ab739f2464fe")
-		)
-		(pin "11"
-			(uuid "0ec5e3c6-e3be-4449-8f1c-c6f97aade417")
-		)
-		(pin "10"
-			(uuid "599900c6-8177-4945-bee3-6b514a09a708")
-		)
-		(pin "18"
-			(uuid "e5a968a9-7afb-450f-89cb-cdc83ecac121")
-		)
-		(pin "19"
-			(uuid "221463a3-bf21-426b-bd2d-5339bafbcd67")
-		)
-		(pin "4"
-			(uuid "09a83964-e71e-42dc-b30c-f02fbb954248")
-		)
-		(pin "15"
-			(uuid "6dc70245-84f7-4f34-ac5b-2d2ec70970bc")
-		)
-		(pin "14"
-			(uuid "f18e1b0a-5148-4cc0-a701-cbb6f3234713")
-		)
-		(instances
-			(project ""
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Interface_CAN_LIN:MCP2515-xST")
 		(at 50.8 55.88 0)
 		(unit 1)
@@ -9162,7 +9038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 267.97 128.27 0)
 			(effects
 				(font
@@ -9171,7 +9047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595"
 			(at 267.97 128.27 0)
 			(effects
 				(font
@@ -9189,7 +9065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74HC595DR/562919"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74HC595N/277246?s=N4IgjCBcpgTAnBaIDGUBmBDANgZwKYA0IA9lANrgAMAHACx2wgC6xADgC5QgDKHATgEsAdgHMQAX2Jh4NeFFBpIWPEVIUQVFlJABaJsiUCArmrKRKAVm3Fd8w1BNmNEZhJ0HKuYQHY6ACxRLeGtWEAA2BRBBABNuXTAqCHYuSBAQYg4ATzZ8bkxcNHcgA"
 			(at 267.97 128.27 0)
 			(effects
 				(font
@@ -9364,7 +9240,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
 			(at 180.34 25.4 0)
 			(effects
 				(font
@@ -9373,7 +9249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
 			(at 180.34 25.4 0)
 			(effects
 				(font
@@ -9391,7 +9267,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/tdk-corporation/FA18X7R1H104KNU06/5863626"
 			(at 180.34 25.4 90)
 			(effects
 				(font
@@ -9824,6 +9700,130 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_Microchip_PIC16:PIC16F1459-IP")
+		(at 173.99 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a7008e3-51c0-439a-a110-6a2133e9c1c8")
+		(property "Reference" "U1"
+			(at 176.1333 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PIC16F1459-IP"
+			(at 176.1333 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+			(at 173.99 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/41639A.pdf"
+			(at 173.99 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PIC16F1454, 8192W FLASH, 1024B SRAM, PDIP-20"
+			(at 173.99 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "3477859d-0c4f-434a-89e1-a9a49d19feaa")
+		)
+		(pin "16"
+			(uuid "4b75abd7-e8f0-4afe-a063-a79e41af182d")
+		)
+		(pin "8"
+			(uuid "8c330de1-94f7-48f8-bf98-d0a718fdaa99")
+		)
+		(pin "1"
+			(uuid "a65b7e58-44b3-4214-acb2-8f03a19edf7b")
+		)
+		(pin "7"
+			(uuid "0d95ebd8-2849-413a-987d-fbed0b54f861")
+		)
+		(pin "11"
+			(uuid "ba2b69f6-95db-4ce7-8119-ab687c962e3f")
+		)
+		(pin "15"
+			(uuid "f062d959-28a7-4fc0-87cd-6c1d4b3d400c")
+		)
+		(pin "14"
+			(uuid "cfebf0cd-8c64-4103-984a-2329cd8cd2c8")
+		)
+		(pin "20"
+			(uuid "9c5c25e7-bab0-42b0-9f90-1f73cb83243b")
+		)
+		(pin "13"
+			(uuid "efa2e413-42af-4908-ba98-9e81fc7952be")
+		)
+		(pin "12"
+			(uuid "907d2eaa-62a0-4b7c-9a46-38665db9910d")
+		)
+		(pin "9"
+			(uuid "ae2c5fe4-3a47-4f52-905b-8d402ee520af")
+		)
+		(pin "3"
+			(uuid "ded2f7f7-f42c-4726-ba74-8f70ca651656")
+		)
+		(pin "2"
+			(uuid "023bee6e-490c-4c2d-ab0a-2da71eecc4f1")
+		)
+		(pin "19"
+			(uuid "2bb25692-32b9-49ff-8ab9-818c2ec9028b")
+		)
+		(pin "18"
+			(uuid "c0827fc1-7479-4c77-a5c3-3e20180e9938")
+		)
+		(pin "6"
+			(uuid "4a45683d-0334-4598-ad08-75bf5a59ac3b")
+		)
+		(pin "4"
+			(uuid "f58a341d-8b3f-41e4-a576-de33a641c2db")
+		)
+		(pin "17"
+			(uuid "24624fcd-89d6-4550-92de-74ad6142a706")
+		)
+		(pin "5"
+			(uuid "8e82c47b-4db0-4ccf-96e3-8d579e627a5d")
+		)
+		(instances
+			(project ""
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -11220,7 +11220,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
 			(at 57.15 106.68 0)
 			(effects
 				(font
@@ -11229,7 +11229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
 			(at 57.15 106.68 0)
 			(effects
 				(font
@@ -11247,7 +11247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/tdk-corporation/FA18X7R1H104KNU06/5863626"
 			(at 57.15 106.68 90)
 			(effects
 				(font
@@ -11530,7 +11530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
 			(at 57.15 26.67 0)
 			(effects
 				(font
@@ -11539,7 +11539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
 			(at 57.15 26.67 0)
 			(effects
 				(font
@@ -11557,7 +11557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/tdk-corporation/FA18X7R1H104KNU06/5863626"
 			(at 57.15 26.67 90)
 			(effects
 				(font
@@ -11674,7 +11674,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
 			(at 274.32 171.45 0)
 			(effects
 				(font
@@ -11683,7 +11683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
 			(at 274.32 171.45 0)
 			(effects
 				(font
@@ -11701,7 +11701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/tdk-corporation/FA18X7R1H104KNU06/5863626"
 			(at 274.32 171.45 90)
 			(effects
 				(font
@@ -12088,7 +12088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 267.97 64.77 0)
 			(effects
 				(font
@@ -12097,7 +12097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595"
 			(at 267.97 64.77 0)
 			(effects
 				(font
@@ -12115,7 +12115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74HC595DR/562919"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74HC595N/277246?s=N4IgjCBcpgTAnBaIDGUBmBDANgZwKYA0IA9lANrgAMAHACx2wgC6xADgC5QgDKHATgEsAdgHMQAX2Jh4NeFFBpIWPEVIUQVFlJABaJsiUCArmrKRKAVm3Fd8w1BNmNEZhJ0HKuYQHY6ACxRLeGtWEAA2BRBBABNuXTAqCHYuSBAQYg4ATzZ8bkxcNHcgA"
 			(at 267.97 64.77 0)
 			(effects
 				(font
@@ -12276,7 +12276,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 267.97 191.77 0)
 			(effects
 				(font
@@ -12285,7 +12285,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595"
 			(at 267.97 191.77 0)
 			(effects
 				(font
@@ -12303,7 +12303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74HC595DR/562919"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74HC595N/277246?s=N4IgjCBcpgTAnBaIDGUBmBDANgZwKYA0IA9lANrgAMAHACx2wgC6xADgC5QgDKHATgEsAdgHMQAX2Jh4NeFFBpIWPEVIUQVFlJABaJsiUCArmrKRKAVm3Fd8w1BNmNEZhJ0HKuYQHY6ACxRLeGtWEAA2BRBBABNuXTAqCHYuSBAQYg4ATzZ8bkxcNHcgA"
 			(at 267.97 191.77 0)
 			(effects
 				(font
@@ -12483,7 +12483,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
 			(at 274.32 44.45 0)
 			(effects
 				(font
@@ -12492,7 +12492,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
 			(at 274.32 44.45 0)
 			(effects
 				(font
@@ -12510,7 +12510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/tdk-corporation/FA18X7R1H104KNU06/5863626"
 			(at 274.32 44.45 90)
 			(effects
 				(font
@@ -12643,7 +12643,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
 			(at 274.32 107.95 0)
 			(effects
 				(font
@@ -12652,7 +12652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
+		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
 			(at 274.32 107.95 0)
 			(effects
 				(font
@@ -12670,7 +12670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/tdk-corporation/FA18X7R1H104KNU06/5863626"
 			(at 274.32 107.95 90)
 			(effects
 				(font
