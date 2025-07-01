@@ -3,3 +3,4 @@ can_gauge-backups
 fp-info-cache
 *.lck
 _autosave*
+symbols.bak
