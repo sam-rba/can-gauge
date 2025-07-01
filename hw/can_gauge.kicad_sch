@@ -5738,6 +5738,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 262.89) (xy 64.77 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d534a22-0c17-4631-9205-9513057c44b2")
+	)
+	(wire
+		(pts
 			(xy 248.92 123.19) (xy 248.92 186.69)
 		)
 		(stroke
@@ -5958,16 +5968,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 262.89) (xy 69.85 262.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e315fe0-19bd-4f47-8741-7e4b9e433363")
-	)
-	(wire
-		(pts
 			(xy 224.79 54.61) (xy 257.81 54.61)
 		)
 		(stroke
@@ -6185,16 +6185,6 @@
 			(type default)
 		)
 		(uuid "b6dee3c3-9424-492c-acda-38e5aba15361")
-	)
-	(wire
-		(pts
-			(xy 33.02 265.43) (xy 45.72 265.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6f8af4e-efe3-4f0b-ad12-a0ab59b7690e")
 	)
 	(wire
 		(pts
@@ -9456,7 +9446,7 @@
 	(symbol
 		(lib_name "GND_5")
 		(lib_id "power:GND")
-		(at 33.02 265.43 0)
+		(at 45.72 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9465,7 +9455,7 @@
 		(fields_autoplaced yes)
 		(uuid "5eddbfb3-9cb4-4a3b-b3e8-e6369a707679")
 		(property "Reference" "#PWR09"
-			(at 33.02 271.78 0)
+			(at 45.72 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9474,7 +9464,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.02 270.51 0)
+			(at 45.72 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9482,7 +9472,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 265.43 0)
+			(at 45.72 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9491,7 +9481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 265.43 0)
+			(at 45.72 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9500,7 +9490,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 265.43 0)
+			(at 45.72 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11752,7 +11742,7 @@
 	(symbol
 		(lib_name "+12V_1")
 		(lib_id "power:+12V")
-		(at 69.85 262.89 0)
+		(at 64.77 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11761,7 +11751,7 @@
 		(fields_autoplaced yes)
 		(uuid "cbe469b1-8c3b-4383-bf78-113708f90105")
 		(property "Reference" "#PWR08"
-			(at 69.85 266.7 0)
+			(at 64.77 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11770,7 +11760,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 69.85 257.81 0)
+			(at 64.77 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11778,7 +11768,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 262.89 0)
+			(at 64.77 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11787,7 +11777,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 262.89 0)
+			(at 64.77 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11796,7 +11786,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 69.85 262.89 0)
+			(at 64.77 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12651,7 +12641,7 @@
 				)
 			)
 		)
-		(property "Value" "Power and CAN"
+		(property "Value" "Power & CAN"
 			(at 52.07 259.08 0)
 			(effects
 				(font
