@@ -9466,7 +9466,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 106.68 52.07 0)
 			(effects
 				(font
@@ -9475,7 +9475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ6GEYJ103V"
 			(at 106.68 52.07 0)
 			(effects
 				(font
@@ -9493,7 +9493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-6GEYJ103V/83062"
 			(at 106.68 52.07 90)
 			(effects
 				(font
@@ -9813,13 +9813,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "MCP2515-IP"
 			(at 52.9433 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-18_W7.62mm"
@@ -9831,7 +9832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP2515-Family-Data-Sheet-DS20001801K.pdf"
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf"
 			(at 50.8 55.88 0)
 			(effects
 				(font
@@ -9841,6 +9842,15 @@
 			)
 		)
 		(property "Description" "CAN transceiver with SPI interface"
+			(at 50.8 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/microchip-technology/MCP2515-I-P/593000"
 			(at 50.8 55.88 0)
 			(effects
 				(font
@@ -10652,7 +10662,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_0402_1005Metric"
+		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
 			(at 102.87 252.73 0)
 			(effects
 				(font
@@ -10661,7 +10671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.kamaya.co.jp/upload/products_pdf/kamaya_products(FMC)_english_20170203_122640.pdf"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AFA0000/AFA0000C7.pdf"
 			(at 102.87 252.73 0)
 			(effects
 				(font
@@ -10679,7 +10689,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/kamaya-inc/FMC10501WHTH/15181274"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERB-RE0R50V/2796788"
 			(at 102.87 252.73 0)
 			(effects
 				(font
@@ -11397,7 +11407,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 71.12 71.12 0)
 			(effects
 				(font
@@ -11406,7 +11416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ6GEYJ103V"
 			(at 71.12 71.12 0)
 			(effects
 				(font
@@ -11424,7 +11434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-2RKF1002X/192073"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-6GEYJ103V/83062"
 			(at 71.12 71.12 90)
 			(effects
 				(font
