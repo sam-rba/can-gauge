@@ -9371,7 +9371,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.47 uF"
+		(property "Value" "0.47u"
 			(at 104.14 127.0062 0)
 			(effects
 				(font
@@ -9969,7 +9969,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 180.3463 21.59 90)
 			(effects
 				(font
@@ -10479,7 +10479,7 @@
 				)
 			)
 		)
-		(property "Value" "500 mA"
+		(property "Value" "500m"
 			(at 102.87 250.19 0)
 			(effects
 				(font
@@ -12156,7 +12156,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 57.1563 102.87 90)
 			(effects
 				(font
@@ -12466,7 +12466,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 57.1563 22.86 90)
 			(effects
 				(font
@@ -12610,7 +12610,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 274.3263 167.64 90)
 			(effects
 				(font
@@ -12822,7 +12822,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 118.0712 257.8035 0)
 			(effects
 				(font
@@ -13411,7 +13411,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22 uF"
+		(property "Value" "22u"
 			(at 130.81 126.4538 0)
 			(effects
 				(font
@@ -13498,7 +13498,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 274.3263 40.64 90)
 			(effects
 				(font
@@ -13658,7 +13658,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 274.3263 104.14 90)
 			(effects
 				(font
@@ -13819,7 +13819,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22 uF"
+		(property "Value" "22u"
 			(at 142.24 126.4538 0)
 			(effects
 				(font

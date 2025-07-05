@@ -451,7 +451,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 1.25 2.5 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1922,7 +1922,7 @@
 				)
 			)
 		)
-		(property "Value" "500 mA"
+		(property "Value" "500m"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "4470898c-fbad-4b39-8161-03d70e4a0104")
@@ -2116,7 +2116,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 1.25 2.5 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2373,7 +2373,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47 uF"
+		(property "Value" "0.47u"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3500,7 +3500,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 1.25 2.5 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3757,7 +3757,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 1.25 2.5 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4317,7 +4317,7 @@
 				)
 			)
 		)
-		(property "Value" "22 uF"
+		(property "Value" "22u"
 			(at 0 2.55 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5871,7 +5871,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 1.25 2.5 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6929,7 +6929,7 @@
 				)
 			)
 		)
-		(property "Value" "22 uF"
+		(property "Value" "22u"
 			(at 0 2.55 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7177,7 +7177,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 1.25 2.5 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -8931,7 +8931,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 uF"
+		(property "Value" "0.1u"
 			(at 1.25 2.5 0)
 			(layer "F.Fab")
 			(hide yes)
