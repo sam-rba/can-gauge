@@ -4,3 +4,7 @@ fp-info-cache
 *.lck
 _autosave*
 symbols.bak
+plots
+plots.zip
+*bottom-pos.csv
+*top-pos.csv
