@@ -8578,6 +8578,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 274.32 171.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03da4b03-31c4-4058-abfd-50fceb3b5774")
+		(property "Reference" "C9"
+			(at 274.3263 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 274.3263 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 274.32 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf"
+			(at 274.32 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 274.32 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM188R71H104KA57J/2591942"
+			(at 274.32 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc6a9a15-51c8-467a-8fd6-60fc566bac02")
+		)
+		(pin "2"
+			(uuid "99571246-02b3-4fda-86f5-ae5e796b8529")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_9")
 		(lib_id "power:GND")
 		(at 284.48 107.95 0)
@@ -8639,6 +8716,85 @@
 			(project "can_gauge"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 115.57 256.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b8d1de9-7dd1-4403-9209-ec7f3781303d")
+		(property "Reference" "C10"
+			(at 118.11 255.2635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 118.11 257.8035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 115.57 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf"
+			(at 115.57 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 115.57 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM188R71H104KA57J/2591942"
+			(at 115.57 256.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6e459c7-20f0-4023-b52b-4ff62414f68e")
+		)
+		(pin "2"
+			(uuid "591789fc-3576-407f-954d-36b7380b2e3e")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -9573,83 +9729,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 274.32 44.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26ed9a78-250d-49ff-9744-ffe8a1f17bb7")
-		(property "Reference" "C7"
-			(at 274.3263 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 274.3263 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 274.32 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
-			(at 274.32 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 274.32 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
-			(at 274.32 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02d97f97-a504-4380-8273-c027cb748fc6")
-		)
-		(pin "2"
-			(uuid "cc5ee8aa-1085-452e-b5e5-640809e2945b")
-		)
-		(instances
-			(project "can_gauge"
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "GND_5")
 		(lib_id "power:GND")
 		(at 115.57 260.35 0)
@@ -10063,7 +10142,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 180.34 25.4 0)
 			(effects
 				(font
@@ -10072,7 +10151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf"
 			(at 180.34 25.4 0)
 			(effects
 				(font
@@ -10090,7 +10169,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM188R71H104KA57J/2591942"
 			(at 180.34 25.4 90)
 			(effects
 				(font
@@ -10958,7 +11037,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6068216e-cd53-42de-968a-cc5cbb5aa2ea")
+		(uuid "6493878b-c083-4537-9a8f-543e83d8102f")
 		(property "Reference" "C6"
 			(at 57.1563 100.33 90)
 			(effects
@@ -10975,7 +11054,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 57.15 106.68 0)
 			(effects
 				(font
@@ -10984,7 +11063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf"
 			(at 57.15 106.68 0)
 			(effects
 				(font
@@ -11002,7 +11081,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM188R71H104KA57J/2591942"
 			(at 57.15 106.68 90)
 			(effects
 				(font
@@ -11012,10 +11091,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "43115367-6690-4c9d-a8e6-38c37216f60a")
+			(uuid "aeaf13d2-efb3-4172-a66c-73773205638e")
 		)
 		(pin "2"
-			(uuid "9d23d475-a22d-49c1-a588-02366fb1fad8")
+			(uuid "742555cd-8678-493d-ab3f-0bae9d1eead7")
 		)
 		(instances
 			(project "can_gauge"
@@ -11088,83 +11167,6 @@
 			(project "can_gauge"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 274.32 107.95 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "765ae6b4-6c33-41f9-a9c0-d70951cd50d0")
-		(property "Reference" "C8"
-			(at 274.3263 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 274.3263 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 274.32 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
-			(at 274.32 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 274.32 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
-			(at 274.32 107.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4365c2c4-2ba7-47cf-a9bd-166ce6d0f9f7")
-		)
-		(pin "2"
-			(uuid "1cab9b81-1959-446c-871e-78fcda7d189a")
-		)
-		(instances
-			(project "can_gauge"
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -12040,6 +12042,83 @@
 			(project "can_gauge"
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 57.15 26.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98dd2198-36b2-41fd-8261-ca39ae7be49d")
+		(property "Reference" "C5"
+			(at 57.1563 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 57.1563 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 57.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf"
+			(at 57.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 57.15 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM188R71H104KA57J/2591942"
+			(at 57.15 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "512266a0-85fe-4e3e-98f6-5b1d27eb6269")
+		)
+		(pin "2"
+			(uuid "1c6dfcb8-8515-48f0-9baf-258756b1e929")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -13494,83 +13573,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 274.32 171.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e2cc7f0b-9eca-411c-9f9e-2e62aae402b5")
-		(property "Reference" "C9"
-			(at 274.3263 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 274.3263 167.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 274.32 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
-			(at 274.32 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 274.32 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
-			(at 274.32 171.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3de257a5-cf6b-4b8a-bdd0-4e0d18e5fb40")
-		)
-		(pin "2"
-			(uuid "16bf2fdb-d330-44c4-bd9d-0d138c4ede0c")
-		)
-		(instances
-			(project "can_gauge"
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_02x02_Counter_Clockwise")
 		(at 49.53 261.62 0)
 		(unit 1)
@@ -13742,83 +13744,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 57.15 26.67 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb3bb1ab-e6ae-4a51-80d7-ec0b7d50b184")
-		(property "Reference" "C5"
-			(at 57.1563 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 57.1563 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 57.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
-			(at 57.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 57.15 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
-			(at 57.15 26.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17423341-73d1-41a7-ba26-d600bbd18aab")
-		)
-		(pin "2"
-			(uuid "a956f2ba-0c68-4753-9d81-49397d820b01")
-		)
-		(instances
-			(project "can_gauge"
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "+5V_5")
 		(lib_id "power:+5V")
 		(at 325.12 115.57 0)
@@ -13886,85 +13811,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 115.57 256.54 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef748bd0-6d84-4dda-93c0-b01fdb3bfb40")
-		(property "Reference" "C10"
-			(at 118.11 255.2635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 118.11 257.8035 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 115.57 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf"
-			(at 115.57 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 115.57 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252"
-			(at 115.57 256.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a044bc98-eef9-462a-ac93-ae9b713137c9")
-		)
-		(pin "2"
-			(uuid "a0cdfe65-d3d8-420d-bc35-d724f128007f")
-		)
-		(instances
-			(project "can_gauge"
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "+5V_3")
 		(lib_id "power:+5V")
 		(at 77.47 69.85 0)
@@ -14026,6 +13872,83 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 274.32 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2c8bfa2-59af-4d73-a892-53d4fdfbba22")
+		(property "Reference" "C7"
+			(at 274.3263 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 274.3263 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 274.32 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf"
+			(at 274.32 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 274.32 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM188R71H104KA57J/2591942"
+			(at 274.32 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4cf1ec9a-d52a-408f-8fd8-adf94b7acb41")
+		)
+		(pin "2"
+			(uuid "6bce532a-40ea-435c-9b9d-0e5b043c8ae7")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -14152,6 +14075,83 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 274.32 107.95 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fab68db6-339a-460d-bdf0-5b6d278f0d90")
+		(property "Reference" "C8"
+			(at 274.3263 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 274.3263 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 274.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf"
+			(at 274.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 274.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM188R71H104KA57J/2591942"
+			(at 274.32 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ac816fa-36a2-473a-8e81-ef6c7f528cdd")
+		)
+		(pin "2"
+			(uuid "1eb47b64-ee37-4764-95dc-456718f89f06")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "C8")
 					(unit 1)
 				)
 			)
