@@ -5311,6 +5311,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 48.26) (xy 106.68 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "363b5b23-88fe-429a-a759-e10ad44a3dab")
+	)
+	(wire
+		(pts
 			(xy 254 124.46) (xy 254 123.19)
 		)
 		(stroke
@@ -5321,7 +5331,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 72.39) (xy 86.36 72.39)
+			(xy 101.6 72.39) (xy 88.9 72.39)
 		)
 		(stroke
 			(width 0)
@@ -5631,16 +5641,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 62.23) (xy 99.06 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69836759-1965-4c6d-b1ea-cc805b742536")
-	)
-	(wire
-		(pts
 			(xy 203.2 72.39) (xy 228.6 72.39)
 		)
 		(stroke
@@ -5901,7 +5901,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 45.72) (xy 86.36 48.26)
+			(xy 88.9 45.72) (xy 88.9 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5981,7 +5981,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 72.39) (xy 86.36 53.34)
+			(xy 88.9 72.39) (xy 88.9 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6158,6 +6158,16 @@
 			(type default)
 		)
 		(uuid "b71ed859-0d12-4e6b-a23d-02fb8f50efce")
+	)
+	(wire
+		(pts
+			(xy 99.06 48.26) (xy 99.06 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bab7a211-762c-4e69-9c1e-9992db01ba57")
 	)
 	(wire
 		(pts
@@ -6348,16 +6358,6 @@
 			(type default)
 		)
 		(uuid "ea37ad1a-5c42-47b1-a689-a696eb1f2279")
-	)
-	(wire
-		(pts
-			(xy 99.06 45.72) (xy 99.06 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eabdf60a-bc0c-4cc7-a2a7-ead565c0eaf7")
 	)
 	(wire
 		(pts
@@ -7547,7 +7547,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 86.36 50.8 180)
+		(at 88.9 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7556,7 +7556,7 @@
 		(fields_autoplaced yes)
 		(uuid "193d6076-1d37-415d-a385-38f67e62efc3")
 		(property "Reference" "R1"
-			(at 88.9 49.5299 0)
+			(at 91.44 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7565,7 +7565,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 88.9 52.0699 0)
+			(at 91.44 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7574,7 +7574,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 86.36 50.8 0)
+			(at 88.9 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7583,7 +7583,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ6GEYJ103V"
-			(at 86.36 50.8 0)
+			(at 88.9 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7592,7 +7592,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 86.36 50.8 0)
+			(at 88.9 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7601,7 +7601,7 @@
 			)
 		)
 		(property "Digikey" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-6GEYJ103V/83062"
-			(at 86.36 50.8 90)
+			(at 88.9 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7763,6 +7763,83 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 101.6 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2309633d-1280-4b88-803b-f1d5b2d57bb0")
+		(property "Reference" "C11"
+			(at 101.6063 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 101.6063 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 101.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM188R71H104KA57-01.pdf"
+			(at 101.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 101.6 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.ca/en/products/detail/murata-electronics/GCM188R71H104KA57J/2591942"
+			(at 101.6 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5d97bf7-dc68-437f-9615-040ae0c16a79")
+		)
+		(pin "2"
+			(uuid "323bb4c6-9d33-4252-8e86-818a9c661c50")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -8026,6 +8103,73 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_2")
+		(lib_id "power:GND")
+		(at 106.68 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32e7c7ac-a340-4ca9-98fb-f981a8350b7a")
+		(property "Reference" "#PWR08"
+			(at 106.68 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83732d3e-f652-42b3-993b-d96092e92d98")
+		)
+		(instances
+			(project "can_gauge"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -8371,73 +8515,6 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR0104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "+5V_1")
-		(lib_id "power:+5V")
-		(at 99.06 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "429f3851-f3a4-4d96-8906-a523ba196c3b")
-		(property "Reference" "#PWR035"
-			(at 99.06 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 99.06 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 99.06 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "552f49d1-e7b4-4c34-971a-905a51d0e99a")
-		)
-		(instances
-			(project "can_gauge"
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -8820,6 +8897,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -9541,7 +9619,7 @@
 	(symbol
 		(lib_name "+5V_1")
 		(lib_id "power:+5V")
-		(at 86.36 45.72 0)
+		(at 88.9 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9550,7 +9628,7 @@
 		(fields_autoplaced yes)
 		(uuid "78e840a4-6817-4a2e-a107-b304e9c9b06b")
 		(property "Reference" "#PWR031"
-			(at 86.36 49.53 0)
+			(at 88.9 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9559,7 +9637,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 86.36 40.64 0)
+			(at 88.9 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9567,7 +9645,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9576,7 +9654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9585,7 +9663,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 86.36 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9732,85 +9810,6 @@
 			(project ""
 				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
 					(reference "#PWR0106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 99.06 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c75fa26-0de8-404d-802c-1f19377b6a65")
-		(property "Reference" "C11"
-			(at 101.6 49.5362 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.47u"
-			(at 101.6 52.0762 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 99.06 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" ""
-			(at 99.06 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab167a54-b16b-4fb4-9fc0-aa921b02dc54")
-		)
-		(pin "2"
-			(uuid "03b0332d-b6b9-406c-9253-39df526677a3")
-		)
-		(instances
-			(project "can_gauge"
-				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
-					(reference "C11")
 					(unit 1)
 				)
 			)
